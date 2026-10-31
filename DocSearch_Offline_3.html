@@ -1,0 +1,1176 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><meta name="theme-color" content="#08172b"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="Toán Học">
+<title>Toán Học • iPhone 14 Pro Max – 3 Tab Gọn · Giai đoạn + T01–T03 31/10</title>
+<style>
+:root{color-scheme:dark;--bg:#070e1b;--panel:#111e32;--panel2:#17283f;--line:#2c4667;--text:#f0f6ff;--muted:#a7bfdc;--p:#63aefc;--b:#fa8394;--win:#39d7a5;--lose:#ff879b;--wait:#f6c871}*{box-sizing:border-box}body{margin:0;font-family:Inter,"Segoe UI",system-ui,Arial,sans-serif;background:var(--bg);color:var(--text);font-size:13px}button,input,select{font:inherit}button{cursor:pointer;background:#253e5d;color:#eef5ff;border:1px solid #45678e;border-radius:8px;padding:8px 10px;font-weight:730}button:hover:not(:disabled){background:#325579}button:focus-visible,input:focus-visible,select:focus-visible{outline:2px solid #72aaff;outline-offset:1px}button:disabled{opacity:.35;cursor:not-allowed}button.strong{background:#3262ba;border-color:#6698ed}button.red{background:#482935;border-color:#915063}button.plain{background:#192a44}button.mini{font-size:11px;padding:5px 7px}.wrap{max-width:1760px;margin:auto;padding:10px 14px}.top{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-bottom:8px}.top h1{font-size:18px;margin:0;letter-spacing:-.4px}.top .subtitle{font-size:10px;color:var(--muted);margin-top:2px}.toolbar{display:flex;flex-wrap:wrap;align-items:center;gap:6px}.toolbar .import{cursor:pointer;background:#233d5a;border:1px solid #4c6788;border-radius:8px;padding:8px 10px;font-weight:750}.toolbar .import:hover{background:#325579}.toolbar .import input{display:none}.meta{display:flex;gap:10px;align-items:center;background:#0e1a2b;border:1px solid #26415e;border-radius:9px;padding:6px 12px;margin-bottom:9px;color:#bcd1e8;font-size:11px;flex-wrap:wrap}.meta strong{color:white}.main{display:grid;grid-template-columns:minmax(0,1fr) minmax(420px,510px);gap:10px;align-items:start}.pane{background:var(--panel);border:1px solid var(--line);border-radius:12px}.left{min-width:0}.entry-head{display:flex;align-items:center;gap:10px;padding:10px 12px;flex-wrap:wrap;border-bottom:1px solid #2b4561}.entry-head strong{font-size:12px}.numCtl{display:flex;align-items:center;gap:5px}.numCtl input{width:81px;text-align:center;font-size:18px;font-weight:900;background:#0d1a2c;color:white;border:1px solid #4b7199;border-radius:8px;padding:6px}.numCtl button{font-size:18px;padding:4px 11px}.tip{color:var(--muted);font-size:11px}.entry-actions{margin-left:auto;display:flex;gap:6px;flex-wrap:wrap}.cards{display:grid;grid-template-columns:1fr 1fr;gap:9px;padding:9px}.hand{background:#14233a;border:1px solid #365377;border-radius:10px;padding:10px;min-width:0}.hand.p{border-top:3px solid var(--p)}.hand.b{border-top:3px solid var(--b)}.hand-top{display:flex;justify-content:space-between;align-items:flex-start;gap:4px}.hand-title{font-size:14px;font-weight:850}.hand-score{text-align:right;font-size:11px;color:#aabdd3}.hand-score b{font-size:22px;color:white;display:block;line-height:1.05}.hand.p .hand-score b{color:var(--p)}.hand.b .hand-score b{color:var(--b)}.hand-detail{font-size:11px;color:#b5cbe3;min-height:33px;margin:7px 0 5px;line-height:1.45}.selected{display:flex;align-items:center;gap:4px;flex-wrap:wrap;min-height:26px}.chip{font-size:11px;background:#304866;border:1px solid #507399;padding:4px 7px;border-radius:6px}.chip button{border:0;background:transparent;font-size:10px;padding:0 2px 0 5px;color:#bad1e8}.keys{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:5px;margin-top:8px}.key{padding:10px 2px;min-height:39px;text-align:center;font-size:14px;border-radius:7px;white-space:nowrap}.key.zero{font-size:12px;color:#d2ddeb}.hand-foot{display:flex;justify-content:space-between;gap:6px;margin-top:7px;font-size:10px;color:var(--muted)}.hand-foot a{text-decoration:underline;cursor:pointer}.savebar{display:flex;gap:9px;align-items:center;padding:0 9px 9px}.savebar button.strong{flex:1;font-size:15px;padding:13px}.savebar .result{min-width:130px;font-size:12px;color:#d7e7ff}.shortHistory{margin:0 9px 9px;background:#0c192a;border:1px solid #273e5a;border-radius:10px;padding:9px 10px}.section-head{display:flex;justify-content:space-between;align-items:center;gap:8px;margin-bottom:7px;flex-wrap:wrap}.section-head b{font-size:12px}.section-head small{font-size:10px;color:var(--muted)}.history-tiles{display:flex;flex-wrap:wrap;gap:4px;max-height:104px;overflow:auto}.tile{width:31px;height:35px;border-radius:5px;border:1px solid #37516e;background:#20304a;text-align:center;display:flex;flex-direction:column;justify-content:center;align-items:center;cursor:pointer;flex:0 0 auto}.tile .n{font-size:9px;opacity:.8}.tile .v{font-weight:850;font-size:12px;line-height:1.1}.tile.good{background:#153f39;border-color:#276d5c;color:#68e4b8}.tile.bad{background:#492936;border-color:#855363;color:#ff9cab}.tile.tie{background:#4e3b24;border-color:#7e6037;color:#ffdb93}.tile.empty{color:#a6b7c8}.more{padding:0 9px 10px}.more details{background:#0f1c30;border:1px solid #2c4361;border-radius:8px;padding:8px 10px;margin-top:7px}.more summary{font-weight:800;cursor:pointer;font-size:11px}.more .desc{font-size:11px;color:var(--muted);line-height:1.6;margin-top:7px}.historyTable{width:100%;border-collapse:collapse;font-size:11px;margin-top:8px}.historyTable td,.historyTable th{padding:6px;text-align:left;border-bottom:1px solid #263f5c}.historyTable th{color:var(--muted)}.right{position:sticky;top:9px;min-width:0;max-height:calc(100vh - 20px);display:flex;flex-direction:column;padding:10px;gap:8px}.pickBox{background:linear-gradient(120deg,#1b3554,#12243a);border:1px solid #4c709e;border-radius:10px;padding:10px 11px}.pickTitle{display:flex;justify-content:space-between;align-items:center;gap:9px;color:#cde2ff;font-size:11px;font-weight:850}.pickRound{font-size:10px;color:#b4cbdf}.pickMain{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:4px}.pickMain .pick{font-size:28px;font-weight:950;line-height:1.1}.pick.p{color:var(--p)}.pick.b{color:var(--b)}.pick.wait{color:var(--wait)}.ballots{font-size:13px;font-weight:800}.explain{font-size:11px;line-height:1.4;margin-top:6px;color:#b8d1ea}.statsRow{display:grid;grid-template-columns:1fr 1fr;gap:7px}.statCard{background:#12213a;border:1px solid #34516f;border-radius:8px;padding:8px 10px}.statCard span{font-size:10px;color:var(--muted)}.statCard strong{display:block;font-size:17px;margin:2px 0}.statCard small{font-size:10px;color:#b4c8d9}.rules-head{display:flex;justify-content:space-between;gap:8px;align-items:center;flex-wrap:wrap}.rules-head b{font-size:13px}.seg{display:flex;align-items:center;gap:5px}.seg button{font-size:10px;padding:5px 7px}.seg button.active{background:#2d5b91;border-color:#73a6e0}.rule-scroll{overflow:auto;min-height:90px;flex:1}.rule-grid{display:grid;grid-template-columns:1fr 1fr;gap:6px}.rule{min-height:70px;background:#14253d;border:1px solid #314963;border-radius:8px;padding:7px 8px;min-width:0}.rule.active{border-color:#f0cf79;background:#273049}.ruleTop{display:flex;justify-content:space-between;align-items:center;gap:3px}.ruleCode{font-size:10px;font-weight:900}.ruleCode.p{color:var(--p)}.ruleCode.b{color:var(--b)}.offset{font-size:10px;color:#c2d8ed}.ruleName{font-size:10px;color:#ecf2fb;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;margin:4px 0}.ruleFoot{display:flex;justify-content:space-between;align-items:center;font-size:10px;color:var(--muted);gap:3px}.ruleFoot b{color:#eef7ff}.dots{display:flex;gap:2px;align-items:center}.dot{display:inline-block;width:10px;height:10px;border-radius:3px;text-align:center;font-size:8px;line-height:10px}.dot.D{background:#266f5b;color:#adffdb}.dot.S{background:#79404e;color:#ffd6db}.dot.H{background:#7f6135;color:#ffe0a4}.ruleLegend{font-size:10px;color:var(--muted);line-height:1.4}.ruleGroup{padding:4px 0;border-top:1px solid #2a4560}.ruleCount{background:#304762;border-radius:6px;padding:3px 6px;font-size:10px;color:#d2e0ec}.bottomStats{display:flex;justify-content:space-between;align-items:center;gap:6px;font-size:10px;flex-wrap:wrap;padding:7px 3px 0;border-top:1px solid #304863;color:#d5e5f5}.badge{background:#3d3a2a;color:#f7d991;border-radius:5px;padding:3px 5px}.toasty{position:fixed;bottom:12px;right:15px;padding:10px 13px;background:#244360;border:1px solid #6294b9;border-radius:9px;color:white;box-shadow:0 4px 18px #050b15;z-index:20;display:none;font-size:12px;max-width:min(410px,90vw)}.muted{color:var(--muted)}.rightRuleP,.rightRuleB{font-size:11px;font-weight:900;margin:3px 0 6px}.rightRuleP{color:var(--p)}.rightRuleB{color:var(--b)}
+@media(max-width:1040px){.main{grid-template-columns:minmax(0,1fr) minmax(360px,42vw)}.rule-grid{grid-template-columns:1fr}.right{max-height:calc(100vh - 15px)}.rule{min-height:59px}.ruleName{margin:2px 0}}
+@media(max-width:800px){.wrap{padding:8px}.main{display:flex;flex-direction:column}.right{position:static;max-height:none;width:100%;order:0}.left{width:100%;order:1}.rule-grid{grid-template-columns:1fr 1fr}.rule-scroll{max-height:255px;overflow:auto;flex:auto}.top h1{font-size:16px}.cards{gap:5px;padding:6px}.hand{padding:7px}.key{min-height:38px;padding:9px 0}.savebar{padding:0 6px 6px}.rule{min-height:65px}}
+@media(max-width:480px){.toolbar{gap:3px}.toolbar button,.toolbar .import{padding:6px;font-size:11px}.hand-title{font-size:12px}.hand-score b{font-size:18px}.keys{gap:3px}.key{min-height:35px;font-size:12px}.hand-detail{font-size:10px}.savebar .result{min-width:80px;font-size:11px}.ruleName{font-size:9px}}
+
+/* === MÀU RÕ • KHÔNG ĐỔI CÔNG THỨC / CÁCH CHẤM === */
+:root{--p:#49a6ff;--b:#ff5c78;--win:#20dfa0;--lose:#ff617c;--wait:#ffc86d;--line:#375475;--muted:#b3cbe5}
+body{background:radial-gradient(circle at 96% 0,rgba(57,102,170,.12),transparent 40%),#070e1b}
+.pane{border-color:#385878}
+.hand.p{background:linear-gradient(180deg,#172f50,#142439 35%);border-color:#427ab2;border-top:3px solid #4baaff}
+.hand.b{background:linear-gradient(180deg,#4a233b,#192437 35%);border-color:#a24d68;border-top:3px solid #fb5c78}
+.hand.p .key:hover:not(:disabled){background:#275c93;border-color:#69bbff}
+.hand.b .key:hover:not(:disabled){background:#73354f;border-color:#ff9aae}
+button.strong{background:#326fcf;border-color:#80b8ff;box-shadow:0 1px 13px rgba(51,130,229,.22)}
+.right{background:#101d30;border-color:#395675}
+.pickBox{position:relative;overflow:hidden;border-width:2px;transition:background .16s,border-color .16s;min-height:119px}
+.pickBox.state-p{background:linear-gradient(115deg,#183e74 0%,#112744 100%);border-color:#4fafff;box-shadow:inset 4px 0 #4fafff,0 0 18px rgba(57,141,234,.13)}
+.pickBox.state-b{background:linear-gradient(115deg,#632b41 0%,#202039 100%);border-color:#fb6983;box-shadow:inset 4px 0 #fb6983,0 0 18px rgba(249,90,119,.13)}
+.pickBox.state-wait{background:linear-gradient(115deg,#3a3441 0%,#182437 100%);border-color:#d2a451;box-shadow:inset 4px 0 #d2a451}
+.pickMain .pick{font-size:34px;font-weight:1000;letter-spacing:1px;text-shadow:0 1px 8px rgba(0,0,0,.16)}
+.pick.p{color:#94d3ff}.pick.b{color:#ffa3b3}.pick.wait{color:#ffd78b}
+.badge{background:#75512e;color:#ffdc99;border:1px solid #c48e50;font-weight:900}
+.state-p .badge{background:#144980;color:#cbe7ff;border-color:#418fd5}
+.state-b .badge{background:#713049;color:#ffced9;border-color:#c65c7a}
+.ballots{font-size:15px}
+.statsRow .statCard{border:1px solid #3a5879;background:#14273f}
+.statsRow .statCard:nth-child(1){border-top:3px solid #1fde9a}
+.statsRow .statCard:nth-child(2){border-top:3px solid #64a2ff}
+.statCard>strong{display:none}
+.statCard>span{font-size:11px;font-weight:850;color:#e6f3ff}
+.statPills{display:flex;gap:6px;margin:9px 0 7px}
+.metric{display:flex;gap:5px;justify-content:space-between;align-items:center;flex:1;min-width:0;border:1px solid transparent;padding:7px 8px;border-radius:7px;font-size:11px;font-weight:850}
+.metric b{font-size:18px;font-variant-numeric:tabular-nums}
+.metric.d{background:#124737;border-color:#228d64;color:#74ffca}
+.metric.s{background:#562939;border-color:#a54b63;color:#ffc0cd}
+.metric.h{background:#544029;border-color:#a97e3c;color:#ffdc8b}
+.rateMark{display:inline-flex;gap:5px;align-items:center;border:1px solid #536780;border-radius:6px;padding:4px 8px;font-size:11px;font-weight:800;margin:0 0 5px;background:#223248;color:#b9d0e4}
+.rateMark.good{background:#124536;border-color:#259267;color:#7bffcb}
+.rateMark.mid{background:#514127;border-color:#b08a3c;color:#ffdd91}
+.rateMark.bad{background:#562637;border-color:#a94c62;color:#ffc0cb}
+.rules-head{padding-top:4px}
+.rule-scroll{scrollbar-color:#53799d #142237}
+.rule{position:relative;overflow:hidden;min-height:78px;border-left:4px solid transparent;padding:8px 8px 7px 10px;transition:background .12s,border-color .12s,opacity .12s}
+.rule.side-p{border-left-color:#4aaaff;background:#132e50;border-top-color:#396c9a;border-right-color:#396c9a;border-bottom-color:#396c9a}
+.rule.side-b{border-left-color:#fa607d;background:#3b263b;border-top-color:#7e4964;border-right-color:#7e4964;border-bottom-color:#7e4964}
+.rule:not(.active){opacity:.78}
+.rule.active{opacity:1;border-width:2px;border-left-width:5px;border-color:#f8d786;box-shadow:0 0 0 1px #8c7040,0 0 15px rgba(248,209,118,.12)}
+.rule.active.side-p{background:linear-gradient(120deg,#154d85,#19314b)}
+.rule.active.side-b{background:linear-gradient(120deg,#82344f,#332438)}
+.ruleName{font-size:11px;font-weight:760;color:#fff}
+.ruleCode.p{color:#a8d7ff}.ruleCode.b{color:#ffb0bf}
+.ruleTop{font-size:11px}
+.match-pill{font-size:9px;font-weight:900;letter-spacing:.3px;padding:3px 5px;border-radius:5px;color:#172029;background:#ffdc93;margin-left:auto}
+.ruleFoot .pct{display:inline-block;border-radius:5px;padding:3px 4px;font-size:10px;font-weight:900}
+.ruleFoot .pct.good{color:#73ffbf;background:#12533d}
+.ruleFoot .pct.mid{color:#ffe397;background:#54402b}
+.ruleFoot .pct.bad{color:#ffafb9;background:#652a3a}
+.ruleFoot .pct.empty{color:#abc3dc;background:#24364e}
+.dot{width:17px;height:17px;border-radius:4px;line-height:17px;font-size:11px;font-weight:950}
+.dot.D{background:#147d58;color:#d1ffea}.dot.S{background:#a23c56;color:#ffe2ea}.dot.H{background:#956922;color:#ffe8b0}
+.tile.good{background:#116949;color:#adffdf;border-color:#27946e}.tile.bad{background:#8d3046;color:#ffe0e8;border-color:#bc5573}.tile.tie{background:#765522;border-color:#b38946;color:#ffebb6}
+.ruleLegend{font-size:11px;color:#c4d6e9}
+.archiveButton{font-size:11px;padding:7px 11px;background:#203e5d;border-color:#4f779f;width:100%;margin-top:3px;text-align:left}
+.archiveButton:hover{background:#2a5179}
+.libraryDialog{border:1px solid #5b7b9e;color:#ecf5ff;background:#0e1c2f;border-radius:14px;padding:0;box-shadow:0 22px 100px #000b;width:min(950px,calc(100vw - 22px));max-height:min(88vh,900px);overflow:hidden}
+.libraryDialog::backdrop{background:rgba(2,6,15,.82)}
+.libHead{display:flex;align-items:flex-start;justify-content:space-between;gap:16px;padding:17px 20px;border-bottom:1px solid #385675;background:#132b45}
+.libHead h2{font-size:19px;margin:0 0 3px}.libHead p{font-size:12px;color:#bad1e5;margin:0}
+.libTools{display:flex;gap:9px;flex-wrap:wrap;align-items:center;padding:12px 16px;background:#102138;border-bottom:1px solid #304a68}
+.libTools input,.libTools select{background:#182f48;color:white;border:1px solid #506f91;border-radius:8px;padding:8px 10px;font-size:12px}
+.libTools input{flex:1;min-width:200px}
+.libList{padding:12px 16px;overflow:auto;max-height:calc(88vh - 205px);display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.libItem{background:#15263e;border:1px solid #3a5876;border-left:4px solid #4aaaff;border-radius:9px;padding:11px;display:grid;gap:5px;min-width:0}
+.libItem.side-b{background:#2d2438;border-left-color:#f96382;border-top-color:#6a4259;border-right-color:#6a4259;border-bottom-color:#6a4259}
+.libRow{display:flex;gap:8px;justify-content:space-between;align-items:flex-start}
+.libRow b{font-size:12px;line-height:1.4}
+.libItem small{font-size:11px;color:#b7cce2}
+.libPct{font-size:17px;font-weight:950;color:#82ffc5;white-space:nowrap}
+.libPct.mid{color:#ffe29b}.libPct.bad{color:#ffb4c3}
+.libFoot{font-size:11px;color:#cfdfef;display:flex;flex-wrap:wrap;gap:9px}
+.libNote{font-size:11px;color:#bad1e5;padding:9px 16px 14px;border-top:1px solid #37506b;line-height:1.45}
+@media(max-width:760px){.libList{grid-template-columns:1fr}.statPills{gap:4px}.metric{padding:6px 4px}.metric b{font-size:15px}.right{order:0}}
+
+
+/* Kho mẫu chạy ngầm — gọn, dễ theo dõi từ màn hình chính */
+.shadowSummary{border:1px solid #486482;border-left:4px solid #39d7a5;background:#123041;padding:8px 10px;border-radius:8px;margin-top:9px;font-size:11px;color:#d1f4ed;font-weight:750}
+.shadowMatches{display:flex;flex-wrap:wrap;gap:6px;margin:7px 0}
+.shadowChip{background:#23364e;color:#e7f5ff;border:1px solid #426888;border-radius:8px;padding:5px 8px;font-size:11px;line-height:1.4}
+.shadowChip.p{border-left:4px solid #4e9ef8}.shadowChip.b{border-left:4px solid #f76e86}
+.shadowChip.on{background:#1d5241;border-color:#57d7a4}
+.shadowChip small{display:block;color:#bad5e8;font-size:10px}
+.libLive{margin-top:7px;padding:6px;background:#0d1d30;border:1px solid #294b68;border-radius:6px;font-size:11px;color:#bad5e8;line-height:1.5}
+.libLive strong{color:#6de8b7}
+.libLive .liveBadge{color:#f7ce74}
+.libLive .liveBadge.on{color:#70e0ae}
+.ruleStatusMini{display:inline-block;margin-left:5px;color:#a4f3d7;font-size:10px}
+
+
+.tiePanel{background:#172b3d;border:1px solid #806436;border-left:4px solid #f4b65d;border-radius:9px;padding:10px;margin:7px 0 10px;color:#f0f5ff;font-size:11px}
+.tieHead{display:flex;gap:9px;justify-content:space-between;align-items:center;flex-wrap:wrap;margin-bottom:6px;color:#ffe0a2}.tieHead small{color:#d9c6ac}.tieLine{margin:5px 0;padding:6px 8px;border:1px solid #47617b;border-radius:6px;background:#20354b}.tieLine strong{color:#ffe09b}.tieMini{display:flex;gap:6px;flex-wrap:wrap;margin-top:3px;color:#c5d6e7}.tieMini span{display:inline-block;background:#1b2940;padding:3px 6px;border-radius:5px}.tieMini .p{color:#8fc8ff}.tieMini .b{color:#ffa1b3}.tieMini .h{color:#ffe0a1}.tiePanel>small{color:#d8bf89;font-size:10px}.observe-pill{font-size:9px;color:#ffe6b0;background:#5a432b;border:1px solid #9e7948;padding:3px 5px;border-radius:5px;margin-left:auto}
+
+/* Rule rankings: current table vs historical reference benches */
+.rule-scroll{min-height:125px}
+.leaderPanel{padding:9px 10px;border:1px solid #49779c;border-left:4px solid #34d399;border-radius:10px;background:linear-gradient(115deg,#122e3c,#14263f);margin:9px 0;color:#ecfaff}
+.leaderTitle{display:flex;justify-content:space-between;gap:8px;align-items:center;flex-wrap:wrap;font-size:12px}
+.leaderTitle label{display:flex;gap:6px;align-items:center;color:#b9d7e8;font-size:10px}
+.leaderTitle select{border:1px solid #6686aa;background:#193a50;border-radius:6px;color:#f5fcff;padding:5px;max-width:230px;font-size:11px}
+.leaderHint{font-size:10px;color:#a4cbdc;line-height:1.45;margin:5px 0}
+.leaderRows{display:grid;grid-template-columns:1fr 1fr;gap:5px}
+.leaderRow{border:1px solid #375979;background:#172f46;border-left:4px solid #579dec;padding:6px;border-radius:7px;min-width:0}
+.leaderRow.b{border-left-color:#ff7995;background:#392b42}.leaderRow.active{outline:1px solid #fbd88e;border-color:#e8c36d}
+.leaderTop{display:flex;gap:6px;align-items:center;justify-content:space-between;font-size:10px}
+.leaderTop b{font-size:11px}.leaderPct{color:#83efc0;font-size:12px;font-weight:900}.leaderPct.warn{color:#ffcf92}
+.leaderRuleName{font-size:10px;color:#c4dcf1;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;margin:3px 0}
+.leaderPerformance{display:flex;gap:6px;align-items:center;flex-wrap:wrap;font-size:10px;color:#d7e6f2}
+.leaderFoot{font-size:10px;color:#b4cddf;margin-top:5px;line-height:1.4}
+.extraDetails{background:#10253a;border:1px solid #45607e;border-radius:8px;font-size:10px;padding:5px 8px}.extraDetails summary{cursor:pointer;color:#c8e1f3;font-weight:800;padding:4px}
+.benchDetails{background:#13273d;border:1px solid #3c5976;border-radius:8px;margin-bottom:8px;font-size:11px;color:#deebf8}
+.benchDetails summary{cursor:pointer;padding:7px 10px;color:#d1e5fa;font-weight:800}.benchTools{display:flex;gap:8px;align-items:center;justify-content:space-between;padding:4px 8px;font-size:10px;color:#b7d5e8}
+.benchGrid{display:grid;grid-template-columns:1fr 1fr;gap:5px;padding:7px}
+.benchOne{background:#172f47;padding:7px;border:1px solid #3c6587;border-radius:6px;line-height:1.55}
+.benchOne strong{color:#9ee5ff}.benchOne small{color:#c6d9e9}
+@media (max-width:740px){.leaderRows,.benchGrid{grid-template-columns:1fr}.leaderTitle select{max-width:180px}}
+
+/* Dedicated tie scoreboard, always visible next to live rule ranking */
+.tieQuick{padding:8px 10px;margin:7px 0 9px;background:#302d33;border:1px solid #b48c51;border-left:4px solid #ffc668;border-radius:9px;color:#ffe7b4;font-size:11px}
+.tieQuickContent{margin-top:5px;font-size:11px;color:#e6dfd7;display:grid;gap:5px}
+.tieQuickRow{background:#192b3e;border:1px solid #5c6571;border-radius:6px;padding:6px 8px;line-height:1.5}
+.tieQuickRow b{color:#ffe2a5}.tieQuickRow .p{color:#91caff;font-weight:900}.tieQuickRow .b{color:#ff9cae;font-weight:900}
+.tieQuickRow .q{display:block;color:#bbd2e3;font-size:10px}
+
+/* ===== MOBILE FAST MODE 2026 • chỉ đổi giao diện, không đổi thuật toán ===== */
+.mobileDock,.mobileHandSwitch,.mobileDataToggle{display:none}
+.mobilePanelGroup{display:contents}
+.mobileActiveMatch,.mobileLibraryIntro{display:none}
+@media(max-width:760px){
+  html{scroll-padding-top:105px;scroll-behavior:smooth}
+  body{overflow-x:hidden;font-size:14px;touch-action:pan-y}
+  button,.import,.tile{-webkit-tap-highlight-color:transparent;touch-action:manipulation}
+  .wrap{width:100%;max-width:100%;padding:7px 8px calc(18px + env(safe-area-inset-bottom));overflow-x:clip}
+  .top{gap:4px;align-items:center;margin-bottom:4px}
+  .top h1{font-size:16px;line-height:1.15}
+  .top .subtitle{display:none}
+  .mobileDataToggle{display:block;margin-left:auto;white-space:nowrap;background:#1c395b;border:1px solid #55769b;border-radius:8px;min-height:36px;padding:7px 9px;font-size:12px}
+  .toolbar{display:none;order:3;width:100%;gap:5px;padding:8px 0 4px}
+  body.mobile-tools-open .toolbar{display:flex}
+  .toolbar>button,.toolbar>.import{flex:1;text-align:center;min-height:43px;white-space:nowrap;font-size:11px;padding:9px 5px}
+  .meta{display:none}
+  .mobileDock{display:block;position:sticky;top:0;z-index:80;background:rgba(7,19,36,.975);border:1px solid #426889;border-radius:12px;padding:7px 8px 7px;box-shadow:0 5px 20px #0008;margin:0 0 7px;backdrop-filter:blur(10px)}
+  .mobileSignalRow{display:flex;justify-content:space-between;align-items:center;gap:6px;margin-bottom:7px}
+  .mobileSignalText{display:flex;align-items:center;gap:8px;min-width:0}
+  .mobileStatusLabel{font-size:10px;line-height:1.35;color:#bdd5ef;font-weight:800}
+  #mobPick{font-size:22px;font-weight:1000;color:#ffd17b;line-height:1.0;min-width:52px;text-align:center}
+  .mobileDock.status-p{border-color:#52abff}.mobileDock.status-p #mobPick{color:#82c7ff}
+  .mobileDock.status-b{border-color:#ff6e8c}.mobileDock.status-b #mobPick{color:#ff98ae}
+  .mobileMiniVotes{font-size:11px;font-weight:850;white-space:nowrap;color:#c2d6e9}
+  .mobileNav{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:5px}
+  .mobileNav button{border-radius:9px;min-height:46px;padding:7px 3px;background:#182d47;border:1px solid #426181;font-size:12px;font-weight:850;letter-spacing:-.15px;white-space:nowrap}
+  .mobileNav button.active{background:#2763a7;border-color:#78bbff;color:white;box-shadow:inset 0 -2px #8ac8ff}
+  .main{display:flex;flex-direction:column;gap:6px}
+  .left,.right{width:100%;order:initial;border-radius:11px}
+  .right{position:static;max-height:none;display:flex;flex-direction:column;padding:8px;gap:8px}
+  .mobilePanelGroup{display:flex;flex-direction:column;gap:8px;min-width:0}
+  body[data-mobile-view="entry"] .right{display:none}
+  body[data-mobile-view="performance"] .left,body[data-mobile-view="rules"] .left{display:none}
+  body[data-mobile-view="performance"] .libraryGroup{display:none}
+  body[data-mobile-view="rules"] .performanceGroup{display:none}
+  body[data-mobile-view="rules"] .libraryGroup .rules-head{order:1}
+  body[data-mobile-view="rules"] .libraryGroup .rule-scroll{order:2}
+  body[data-mobile-view="rules"] .libraryGroup .bottomStats{order:3}
+  body[data-mobile-view="rules"] .libraryGroup .tieQuick{order:4}
+  body[data-mobile-view="rules"] .libraryGroup .benchDetails{order:5}
+  body[data-mobile-view="rules"] .libraryGroup .extraDetails{order:6}
+  body[data-mobile-view="rules"] .libraryGroup .archiveButton{order:7}
+  body[data-mobile-view="rules"] .libraryGroup .ruleLegend{order:8}
+  .mobileLibraryIntro{display:flex;flex-direction:column;gap:4px;padding:12px;border:1px solid #3a5c7f;background:#16283f;border-radius:11px;order:0}
+  .mobileLibraryIntro b{font-size:13px;color:#e1efff}
+  .mobileLibraryIntro small{font-size:11px;color:#bdd3e9;line-height:1.45}
+  .mobileActiveMatch{display:flex;flex-direction:column;gap:7px;border:1px solid #49728e;background:#112f40;border-radius:10px;padding:11px}
+  .mobileActiveMatch .match-head{display:flex;justify-content:space-between;align-items:center;gap:5px}
+  .mobileActiveMatch .match-head b{color:#d8f4ff;font-size:12px}
+  .mobileActiveMatch .match-head span{color:#78d7f1;font-size:12px;font-weight:900}
+  .mobileActiveMatch small{font-size:10px;color:#acd2dc;line-height:1.4}
+  .mobileMatchBody{display:flex;flex-direction:column;gap:5px;font-size:12px;color:#c4e0ef;line-height:1.4}
+  .mobileMatchRow{display:flex;align-items:flex-start;justify-content:space-between;gap:7px;padding:7px 9px;background:#172a40;border:1px solid #365675;border-radius:8px}
+  .mobileMatchRow .mobileMatchTitle{flex:1;font-size:12px;font-weight:700}
+  .mobileMatchRow .mobileMatchRate{white-space:nowrap;color:#ffde96;font-size:11px;font-weight:900}
+  .mobileMatchRow.side-p{border-left:3px solid #4b9efa}
+  .mobileMatchRow.side-b{border-left:3px solid #fb7185}
+  .mobileMatchBody .noMatch{font-size:12px;color:#bed2e3}
+  .mobilePanelGroup .rule-scroll{min-height:180px}
+  body[data-mobile-view="performance"] .mobileActiveMatch{order:2}
+  body[data-mobile-view="performance"] .leaderPanel{order:3}
+  body[data-mobile-view="performance"] .pickBox{order:0}
+  body[data-mobile-view="performance"] .statsRow{order:1}
+  .entry-head{padding:8px;gap:7px}
+  .entry-head strong{font-size:12px}
+  .numCtl input{width:72px;font-size:18px;min-height:44px;padding:5px}
+  .numCtl button{min-width:41px;min-height:44px;padding:5px 10px}
+  .entry-head .tip{width:100%;order:3;line-height:1.2}
+  .entry-actions{margin-left:0;order:4;width:100%;gap:6px;justify-content:flex-end}
+  .entry-actions button{min-height:35px;flex:1}
+  .mobileHandSwitch{display:grid;grid-template-columns:1fr 1fr;gap:6px;padding:8px 8px 0}
+  .mobileHandSwitch button{min-height:47px;background:#1a324c;border:1px solid #446583;border-radius:10px;font-size:14px;display:flex;align-items:center;justify-content:space-between;padding:9px 13px}
+  .mobileHandSwitch button.active[data-side="p"]{background:#194b7e;border:2px solid #57b0ff;color:#cdeaff}
+  .mobileHandSwitch button.active[data-side="b"]{background:#673047;border:2px solid #ff7799;color:#ffe2e9}
+  .mobileHandSwitch .smHandScore{font-size:16px;font-weight:950}
+  .cards{display:block;padding:7px 8px 8px}
+  .cards[data-mobile-hand="p"] .hand.b{display:none}
+  .cards[data-mobile-hand="b"] .hand.p{display:none}
+  .hand{padding:12px;min-height:290px}
+  .hand-title{font-size:16px}
+  .hand-score b{font-size:27px}
+  .hand-detail{font-size:12px;min-height:21px;margin:6px 0}
+  .selected{min-height:35px;gap:5px}
+  .chip{font-size:14px;padding:6px 9px}
+  .chip button{font-size:16px;min-height:24px}
+  .keys{grid-template-columns:repeat(7,minmax(0,1fr));gap:5px;margin-top:7px}
+  .key,.key.zero{min-height:50px;padding:6px 0;font-size:17px;border-radius:9px;font-weight:900}
+  .hand-foot{font-size:12px;align-items:center;margin-top:8px}
+  .hand-foot a{min-height:36px;padding:6px 0;display:inline-flex;align-items:center}
+  .savebar{position:sticky;bottom:0;z-index:65;border-top:1px solid #3d6d99;background:rgba(11,28,48,.97);box-shadow:0 -5px 17px #0009;border-radius:0 0 11px 11px;padding:9px 8px calc(9px + env(safe-area-inset-bottom));gap:6px}
+  .savebar .result{min-width:63px;max-width:80px;font-size:11px;line-height:1.2}
+  .savebar button.strong{min-height:53px;font-size:14px;padding:8px 5px}
+  .savebar button#resetDraft{min-height:46px;max-width:65px;font-size:11px;padding:4px}
+  .shortHistory{margin:8px;padding:9px}
+  .history-tiles{max-height:235px;overflow:auto}
+  .tile{width:36px;height:42px}
+  .tile .n{font-size:10px}.tile .v{font-size:15px}
+  .more{padding:0 8px 8px}
+  .more details{padding:10px;margin-top:7px}
+  #historyList{max-width:100%;overflow-x:auto}
+  .historyTable{min-width:500px}
+  .pickBox{min-height:0;padding:9px}
+  .pickMain .pick{font-size:30px}
+  .statsRow{gap:6px}
+  .statCard{padding:7px 8px}
+  .statCard>span{font-size:10px}
+  .statPills{gap:3px;margin:6px 0}
+  .metric{padding:5px 4px;font-size:10px;min-width:0}
+  .metric b{font-size:16px}
+  .leaderRows{grid-template-columns:1fr 1fr;gap:5px}
+  .leaderRow{min-height:67px}
+  .leaderRuleName{white-space:normal;line-height:1.25}
+  .rule-grid{grid-template-columns:1fr 1fr;gap:6px}
+  .rule{min-height:91px;padding:9px}
+  .ruleName{white-space:normal;line-height:1.3;font-size:11px;max-height:42px;overflow:hidden}
+  .rule-scroll{overflow:auto;max-height:none;flex:none}
+  .rule:not(.active){opacity:.92}
+  .right>.pickBox{order:0}.right>.leaderPanel{order:1}.right>.statsRow{order:2}.right>.rules-head{order:3}.right>.rule-scroll{order:4}.right>.bottomStats{order:5}.right>.tieQuick{order:6}.right>.benchDetails{order:7}.right>.extraDetails{order:8}.right>.archiveButton{order:9}.right>.ruleLegend{order:10}
+  .libraryDialog{width:calc(100vw - 12px);max-height:92dvh;border-radius:12px}
+  .libTools input{min-width:100%;font-size:16px}.libList{grid-template-columns:1fr}
+  .libHead{padding:12px}.libHead h2{font-size:16px}.libTools{padding:9px}
+  .toasty{bottom:calc(90px + env(safe-area-inset-bottom));right:8px;max-width:calc(100vw - 16px)}
+  input,select{font-size:16px}
+  .mobileHideUntilReady{display:none}
+  .mobileSignalNote{margin:1px 0 8px;color:#d7e7fb;font-size:11px;line-height:1.25;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;padding:0 3px}
+  .shortHistory .section-head{flex-wrap:wrap;gap:6px}
+  .more #historyDetails summary{min-height:46px;display:flex;align-items:center;color:#bbddff;font-weight:850}
+}
+
+@media(max-width:370px){
+ .wrap{padding-left:5px;padding-right:5px}
+ .mobileDock{padding:5px}
+ .mobileNav button{font-size:11px}
+ .key,.key.zero{min-height:46px;font-size:15px}
+ .keys{gap:3px}
+ .hand{padding:9px}
+ .leaderRows,.rule-grid{grid-template-columns:1fr}
+ .savebar button.strong{font-size:12px}
+}
+@media(min-width:761px){.mobileDock,.mobileHandSwitch,.mobileDataToggle{display:none!important}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+
+
+/* FIX 28/10: Ba tab luôn hiển thị trên điện thoại VÀ máy tính, kể cả chế độ "Trang web cho máy tính". */
+.mobileDock { display:block !important; position:sticky;top:0;z-index:100;background:rgba(7,19,36,.98);border:1px solid #547fa9;border-radius:12px;padding:9px 10px;margin-bottom:9px;box-shadow:0 8px 24px rgba(0,0,0,.55); }
+.mobileSignalRow { display:flex;align-items:center;justify-content:space-between;gap:8px;margin-bottom:7px; }
+.mobileSignalText { display:flex;align-items:center;gap:10px; }
+.mobileStatusLabel { font-weight:800;color:#cde2fc;font-size:11px; }
+#mobPick { font-size:24px;font-weight:950;color:var(--wait); }
+.mobileDock.status-p #mobPick { color:#76c1ff; }
+.mobileDock.status-b #mobPick { color:#ff8fa5; }
+.mobileMiniVotes { font-weight:850;white-space:nowrap;color:#d1e8ff; }
+.mobileSignalNote { margin:2px 0 9px;font-size:11px;color:#c0d6ee;overflow:hidden;text-overflow:ellipsis;white-space:nowrap; }
+.mobileNav { display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px; }
+.mobileNav button { min-height:48px;min-width:0;padding:10px 5px;border-radius:10px;border:2px solid #4d7295;background:#1a304c;color:#e1eefa;font-weight:900;font-size:clamp(11px,1.8vw,15px);line-height:1.2;cursor:pointer; }
+.mobileNav button.active,.mobileNav button[aria-selected="true"] { background:#2460a0;border-color:#92d2ff;color:#fff;box-shadow:inset 0 -3px #b1e5ff,0 0 12px #2e8be85b; }
+.mobileNav button:focus-visible { outline:3px solid #fff;outline-offset:2px; }
+@media(min-width:761px) {
+  .wrap { max-width:1200px; }
+  .main { display:flex;flex-direction:column;gap:10px; }
+  .left,.right { width:100%;min-width:0;order:initial; }
+  .right { position:static;max-height:none;display:flex;flex-direction:column;gap:10px;padding:12px; }
+  .mobilePanelGroup { display:flex;flex-direction:column;gap:10px;min-width:0; }
+  body[data-mobile-view="entry"] .right { display:none; }
+  body[data-mobile-view="performance"] .left,body[data-mobile-view="rules"] .left { display:none; }
+  body[data-mobile-view="performance"] .libraryGroup { display:none; }
+  body[data-mobile-view="rules"] .performanceGroup { display:none; }
+  body[data-mobile-view="rules"] .libraryGroup .rule-scroll { max-height:none;overflow:visible;flex:none; }
+  body[data-mobile-view="rules"] .rule-grid { grid-template-columns:repeat(3,minmax(0,1fr)); }
+  .mobileActiveMatch { display:flex;flex-direction:column;gap:8px;padding:12px;border:1px solid #49728e;background:#112f40;border-radius:10px; }
+  .mobileActiveMatch .match-head { display:flex;align-items:center;justify-content:space-between; }
+  .mobileMatchBody { display:flex;flex-direction:column;gap:5px; }
+  .mobileMatchRow { display:flex;justify-content:space-between;gap:12px;padding:6px 9px;background:#172a40;border:1px solid #365675;border-radius:8px; }
+  .mobileMatchTitle { font-weight:750; }
+  .mobileLibraryIntro { display:flex;flex-direction:column;gap:6px;padding:12px;border:1px solid #3a5c7f;background:#16283f;border-radius:10px; }
+  .mobileLibraryIntro small { color:#c4d8ed; }
+  .mobileDock,.mobileHandSwitch,.mobileDataToggle { display:block !important; }
+  .mobileHandSwitch,.mobileDataToggle { display:none !important; }
+}
+@media(max-width:760px){
+  .mobileNav { gap:5px; }
+  .mobileNav button { min-height:48px;font-size:11.5px;padding:8px 2px; }
+}
+
+
+/* === iPhone 14 Pro Max UX | 430 × 932 CSS px; half-height / narrow panels === */
+:root{--tap:44px}
+.compactModeToggle{display:none;white-space:nowrap;border:1px solid #627b96;background:#1e3651;border-radius:9px;font-size:11px;font-weight:800;padding:6px 8px;min-height:34px;color:#d6edff}
+@media(max-width:760px){
+  html{overflow-x:hidden;-webkit-text-size-adjust:100%;scroll-padding-top:115px}
+  body{width:100%;max-width:100%;overflow-x:clip}
+  .wrap{padding:5px 7px calc(18px + env(safe-area-inset-bottom));min-width:0}
+  .top{padding:2px 2px 3px;min-height:28px;margin-bottom:3px}
+  .top h1{font-size:14px;line-height:1.15;letter-spacing:-.25px}
+  .top .subtitle{display:none}
+  .mobileDataToggle{display:block!important;min-height:30px;font-size:11px;padding:5px 8px}
+  .compactModeToggle{display:inline-flex!important;align-items:center;justify-content:center;flex:0 0 auto}
+  .mobileDock{padding:7px 8px!important;border-radius:10px;margin:0 0 5px!important;top:0;position:sticky;max-width:100%;z-index:105;box-shadow:0 5px 14px #0009}
+  .mobileSignalRow{margin-bottom:5px;gap:6px}
+  .mobileSignalText{gap:6px;min-width:0}
+  .mobileStatusLabel{font-size:9px;line-height:1.18}
+  #mobPick{font-size:23px;min-width:45px;line-height:1}
+  .mobileMiniVotes{font-size:10px;letter-spacing:-.2px}
+  .mobileSignalNote{font-size:10px;margin:0 0 6px;padding:0 1px;line-height:1.15;white-space:nowrap}
+  .mobileNav{gap:5px}
+  .mobileNav button{min-height:43px!important;padding:7px 3px!important;font-size:12px!important;border-width:1px!important;border-radius:8px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .main,.pane,.left,.right{min-width:0;width:100%}
+  .entry-head{padding:6px 8px;gap:5px;align-items:center}
+  .entry-head strong{font-size:11px}
+  .numCtl{gap:3px}.numCtl input{width:59px;min-height:39px;padding:3px;font-size:17px}
+  .numCtl button{min-width:36px;min-height:39px;font-size:17px;padding:3px 8px}
+  .entry-head .tip{order:5;font-size:10px;margin:0}
+  .entry-actions{display:flex;width:auto;flex:1 1 auto;justify-content:flex-end;margin-left:auto;order:0;gap:4px}
+  .entry-actions button{min-height:37px;flex:0 0 auto;font-size:10px;padding:5px 7px}
+  .mobileHandSwitch{padding:5px 7px 0;gap:5px}
+  .mobileHandSwitch button{min-height:41px;font-size:13px;padding:6px 10px;border-radius:8px}
+  .mobileHandSwitch .smHandScore{font-size:16px}
+  .cards{padding:5px 7px 7px}
+  .hand{min-height:0;padding:8px 9px;border-radius:9px}
+  .hand-title{font-size:14px}.hand-score{font-size:9px}.hand-score b{font-size:23px}
+  .hand-detail{font-size:11px;min-height:15px;margin:3px 0;line-height:1.2}
+  .selected{min-height:19px;gap:3px}
+  .chip{font-size:12px;padding:3px 5px}
+  .chip button{min-height:18px;padding:0 3px 0 4px;font-size:13px}
+  .keys{grid-template-columns:repeat(7,minmax(0,1fr));gap:4px;margin-top:5px}
+  .key,.key.zero{min-height:44px;font-size:16px;padding:6px 0;border-radius:8px}
+  .hand-foot{margin-top:3px;font-size:10px}
+  .hand-foot a{min-height:28px;padding:3px 0}
+  .savebar{padding:6px 7px calc(6px + env(safe-area-inset-bottom));gap:6px}
+  .savebar .result{min-width:48px;max-width:80px;font-size:10px}
+  .savebar button.strong{min-height:48px;font-size:13px;padding:6px 3px}
+  .savebar button#resetDraft{min-height:44px;max-width:56px;font-size:10px}
+  .shortHistory{margin:5px 7px 7px;padding:7px}
+  .shortHistory .section-head{margin-bottom:5px}
+  .shortHistory .section-head b{font-size:11px}
+  .shortHistory .section-head small{display:none}
+  .history-tiles{flex-wrap:nowrap;max-height:43px;overflow-x:auto;overflow-y:hidden;-webkit-overflow-scrolling:touch}
+  .tile{width:34px;height:39px}
+  .more{padding:0 7px 10px}
+  .more summary{font-size:11px}
+  .right{gap:6px;padding:7px}
+  .statsRow{grid-template-columns:1fr 1fr}
+  .rule-grid,.leaderRows{grid-template-columns:1fr 1fr;gap:5px}
+  .rule{min-height:77px;padding:7px}
+  .ruleName{max-height:none;font-size:10px}
+  .leaderRows .leaderRow{min-height:60px}
+  button{touch-action:manipulation}
+}
+/* Half-height mode may be activated manually, or automatically for a short viewport. */
+@media(max-width:760px){
+  body.half-screen .top{margin-bottom:1px;min-height:24px}
+  body.half-screen .top h1{font-size:12px}
+  body.half-screen .mobileDataToggle{min-height:29px}
+  body.half-screen .mobileDock{padding:4px 6px!important;margin-bottom:4px!important;border-radius:9px}
+  body.half-screen .mobileSignalRow{margin-bottom:3px}
+  body.half-screen #mobPick{font-size:19px}
+  body.half-screen .mobileStatusLabel{font-size:9px}
+  body.half-screen .mobileMiniVotes{font-size:9px}
+  body.half-screen .compactModeToggle{min-height:28px;font-size:10px;padding:3px 6px}
+  body.half-screen .mobileSignalNote{display:none}
+  body.half-screen .mobileNav button{min-height:37px!important;padding:5px 2px!important;font-size:11px!important}
+  body.half-screen .entry-head{padding:4px 6px;gap:4px}
+  body.half-screen .numCtl input{min-height:32px;width:53px;font-size:16px}
+  body.half-screen .numCtl button{min-height:32px;min-width:32px}
+  body.half-screen .entry-actions button{min-height:32px;padding:3px 5px;font-size:9px}
+  body.half-screen .entry-head .tip{display:none}
+  body.half-screen .mobileHandSwitch{padding:3px 6px 0}
+  body.half-screen .mobileHandSwitch button{min-height:35px;font-size:12px;padding:5px 7px}
+  body.half-screen .cards{padding:3px 6px 5px}
+  body.half-screen .hand{padding:6px 8px}
+  body.half-screen .hand-title{font-size:12px}
+  body.half-screen .hand-score b{font-size:20px}
+  body.half-screen .hand-detail{margin:2px 0;font-size:10px}
+  body.half-screen .selected{min-height:16px}
+  body.half-screen .chip{font-size:11px;padding:2px 4px}
+  body.half-screen .keys{gap:3px;margin-top:3px}
+  body.half-screen .key,body.half-screen .key.zero{min-height:41px;font-size:15px;padding:5px 0}
+  body.half-screen .hand-foot{margin-top:2px}
+  body.half-screen .hand-foot a{min-height:26px;padding:2px 0}
+  body.half-screen .savebar{position:fixed;bottom:0;left:6px;right:6px;width:auto;z-index:90;border:1px solid #507eaf;border-radius:10px 10px 0 0;padding:5px 6px calc(5px + env(safe-area-inset-bottom));background:#10243c;box-shadow:0 -4px 16px #000b}
+  body.half-screen[data-mobile-view="entry"] .left{padding-bottom:calc(75px + env(safe-area-inset-bottom))}
+  body.half-screen .savebar button.strong{min-height:43px;font-size:12px}
+  body.half-screen .savebar .result{font-size:9px}
+  body.half-screen .savebar button#resetDraft{min-height:40px}
+  body.half-screen .shortHistory{margin-top:4px}
+  body.half-screen .shortHistory .section-head{margin-bottom:3px}
+  body.half-screen .shortHistory .section-head b{font-size:10px}
+  body.half-screen .history-tiles{max-height:34px}
+  body.half-screen .tile{width:28px;height:32px}
+}
+/* Narrow embed: e.g. a half-width webview. Maintain readable tap targets, allow vertical scroll. */
+@media(max-width:300px){
+ .wrap{padding-left:4px;padding-right:4px}
+ .top h1{font-size:12px}
+ .mobileDock{padding:5px!important}
+ .mobileStatusLabel{font-size:9px}
+ #mobPick{font-size:19px;min-width:34px}
+ .mobileMiniVotes{display:none}
+ .mobileNav{gap:3px}
+ body .mobileNav button,body.half-screen .mobileNav button{font-size:0!important;line-height:1;min-height:40px!important}
+ #mobileNavEntry::after{content:'Nhập';font-size:12px}
+ #mobileNavPerformance::after{content:'Phong độ';font-size:12px}
+ #mobileNavRules::after{content:'Kho rule';font-size:12px}
+ .entry-head{flex-wrap:wrap}
+ .entry-actions{width:100%;margin-left:0;justify-content:space-between}
+ .entry-actions button{flex:1}
+ .mobileHandSwitch button{font-size:11px;padding:5px}
+ .cards{padding:4px}
+ .hand{padding:7px}
+ .keys{grid-template-columns:repeat(4,minmax(0,1fr));gap:4px}
+ .key,.key.zero{min-height:44px;font-size:14px}
+ .rule-grid,.leaderRows,.statsRow{grid-template-columns:1fr}
+ .savebar .result{display:none}
+ .savebar button.strong{font-size:12px}
+ body.half-screen .keys{grid-template-columns:repeat(4,minmax(0,1fr))}
+ body.half-screen .key,body.half-screen .key.zero{min-height:44px}
+}
+@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important}}
+
+
+/* Bộ 10 mẫu mới – tô màu theo cửa, không lấn thanh tín hiệu */
+.newRulesDetails{margin:9px 0;border:1px solid #486987;border-radius:10px;background:#101f35;padding:8px 10px;color:#e5f2ff}
+.newRulesDetails>summary{font-size:12px;cursor:pointer;font-weight:800;color:#a8e3ff;line-height:1.5;list-style-position:inside}
+.newRulesDetails>summary span{float:right;color:#ffc66c;font-size:11px}
+.newRuleHelp{font-size:11px;color:#afc8dc;line-height:1.5;margin:7px 0}
+.newRulesPanel{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:6px;margin:8px 0 3px}
+.newRuleRow{border:1px solid #35506d;border-left:4px solid #5b98ee;padding:7px;border-radius:8px;background:#162b43;min-width:0;overflow-wrap:anywhere}
+.newRuleRow.b{border-left-color:#ef647f}.newRuleRow.match{background:#2c2847;border-color:#efc46c}.newRuleRow.eligible{box-shadow:0 0 0 1px rgba(48,219,148,.55) inset}
+.newRuleRow b{display:block;color:#e8f5ff;font-size:11px}.newRuleRow small{display:block;color:#a9c2d6;font-size:10px;margin:4px 0 0;line-height:1.5}.newRuleRow strong{color:#fff;font-weight:850}.newRulesDetails .candidateWarn{color:#ffcb7d}
+@media (max-width:440px){.newRulesPanel{grid-template-columns:1fr}.newRulesDetails>summary span{float:none;margin-left:5px}}
+
+/* KIỂM TOÁN THEO GIAI ĐOẠN • v31/10 */
+.stageAudit,.studyDetails{background:#101f34;border:1px solid #38516a;border-radius:12px;padding:10px 12px;margin:9px 0;color:#dbe9fc}
+.stageAudit summary,.studyDetails summary{font-size:12px;font-weight:850;color:#e7f0ff;cursor:pointer;line-height:1.5}
+.stageIntro{font-size:11px;color:#a5bdd3;margin:8px 0;line-height:1.55}
+.stageNow{font-size:12px;background:#172c47;border:1px solid #35577a;border-radius:9px;padding:9px 10px;margin:9px 0;line-height:1.5}
+.stageNow b{color:#8ad1f8}
+.stageWarning{background:rgba(239,119,87,.12);color:#ffb4a7;border:1px solid rgba(239,119,87,.4);border-radius:8px;padding:9px 10px;font-size:11px;line-height:1.45;margin:8px 0}
+.stageGrid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:7px}
+.stageCell{background:#14263d;border:1px solid #324b68;border-radius:10px;padding:9px;min-width:0}
+.stageCell.isNow{border-color:#70c0fa;background:#1b304b}
+.stageCell strong{font-size:12px;display:block;color:#e9f4ff;margin-bottom:5px}
+.stageCell .stageMetric{font-weight:800;color:#bddbf5;font-size:12px}
+.stageCell small{font-size:10px;color:#9ebad1;line-height:1.5;display:block;margin:5px 0}
+.stageTop{margin:8px 0 0;padding:0;list-style:none}
+.stageTop li{border-top:1px solid #2c445b;padding:6px 0;font-size:11px;line-height:1.35;overflow-wrap:anywhere}
+.stageTop li b{color:#f1e2a5}
+.stageTag{display:inline-block;font-size:10px;color:#83ebbd;border:1px solid #327967;border-radius:6px;padding:2px 5px;margin-left:3px}
+.stageTag.watch{color:#a9bdd3;border-color:#506277}
+.studyRows{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;margin-top:10px}
+.studyRow{border-radius:10px;border:1px solid #355678;padding:10px;background:#13253d;min-width:0;display:flex;flex-direction:column;gap:6px;line-height:1.45}
+.studyRow.match{border-color:#6a8fad;background:#1b3049}
+.studyRow.featured{border-color:#29a982;background:#153c36}
+.studyRow b{font-size:12px;color:#f3f8fe}
+.studyRow small{font-size:11px;color:#bdd2e9}
+.studyStat{font-weight:750;font-size:12px;color:#e0edff}
+.studyBadge{font-weight:800;font-size:11px;color:#aee8c8}
+.studyBadge.wait{color:#d5c596}
+.studyFine{font-size:10px;color:#96b0c8;margin-top:8px;line-height:1.5}
+@media(max-width:1150px){.stageGrid,.studyRows{grid-template-columns:1fr}}
+@media(max-width:760px){.stageAudit,.studyDetails{margin:6px 0;padding:9px}.stageGrid{grid-template-columns:1fr}.studyRows{grid-template-columns:1fr}.stageCell{padding:8px}.studyRow{padding:9px}body.half-screen .stageAudit:not([open]){padding:7px 9px}body.half-screen .stageCell small{margin:2px 0}}
+
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="top"><div><h1>🧮 Toán Học <span style="color:#86bfff">• Theo dõi Rule P/B</span></h1><div class="subtitle">3 tab: Nhập ván / Phong độ / Kho rule • Tín hiệu luôn ở trên • Không dùng thứ tự nhập lá</div></div><button type="button" class="mobileDataToggle" id="mobileDataToggle" aria-expanded="false">☰ Dữ liệu</button><div class="toolbar"><label class="import">↑ Nhập JSON<input id="importFile" type="file" accept=".json,application/json"></label><button id="exportBtn">↓ Xuất JSON</button><button id="archiveBtn" title="Lưu bàn vào kho so sánh">＋ Lưu bàn</button><button id="clearBtn" class="red">Bàn mới</button></div></header>
+<div class="meta"><span>Ván đã lưu: <strong id="totalHands">0</strong></span><span>Thực tế: <strong id="realPBH">0 P · 0 B · 0 H</strong></span><span>Gợi ý khớp: <strong id="matchedCount">0</strong></span><span>Quy tắc: <strong>Không dùng thứ tự nhập lá</strong></span><span id="saveNotice" style="margin-left:auto;color:#6ce4ba">● Offline · Tự lưu</span></div>
+
+<div class="mobileDock" id="mobileDock" aria-label="Thanh tín hiệu và điều hướng điện thoại">
+ <div class="mobileSignalRow"><div class="mobileSignalText"><div class="mobileStatusLabel">VÁN <span id="mobRound">1</span><div>TÍN HIỆU THỐNG KÊ</div></div><div id="mobPick">CHỜ</div></div><div class="mobileMiniVotes"><span style="color:#8ac8ff">P <span id="mobVotesP">0</span></span> : <span style="color:#ffa4b8">B <span id="mobVotesB">0</span></span></div><button id="compactModeToggle" class="compactModeToggle" type="button" aria-pressed="false" title="Chuyển chế độ nửa màn hình / toàn màn hình">◧ Gọn</button></div>
+ <div class="mobileSignalNote" id="mobileSignalNote" title="Tín hiệu chỉ để kiểm chứng, không bảo đảm kết quả">Xem giải thích và thống kê ở tab Phong độ</div>
+ <nav class="mobileNav" role="tablist" aria-label="Ba tab sử dụng trên điện thoại"><button type="button" id="mobileNavEntry" class="active" role="tab" aria-selected="true" aria-controls="mobileEntryPanel">1 · 🃏 Nhập ván</button><button type="button" id="mobileNavPerformance" role="tab" aria-selected="false" aria-controls="mobilePerformancePanel">2 · 📈 Phong độ</button><button type="button" id="mobileNavRules" role="tab" aria-selected="false" aria-controls="mobileRulesPanel">3 · 🧩 Kho rule</button></nav>
+</div>
+<div class="main">
+<section class="left pane" id="mobileEntryPanel" role="tabpanel" aria-label="Nhập lá và dự đoán">
+<div class="entry-head"><strong>VÁN</strong><div class="numCtl"><button id="minusRound" type="button">−</button><input type="number" min="1" max="99999" id="roundNo" aria-label="Số ván" value="1"><button id="plusRound" type="button">+</button></div><span class="tip" id="editingLabel">Nhập 2–3 lá mỗi bên</span><div class="entry-actions"><button class="mini plain" id="insertBtn" title="Chèn ván bị thiếu">＋ Chèn thiếu</button><button class="mini plain" id="undoBtn">↶ Ván cuối</button></div></div>
+<div class="mobileHandSwitch" role="group" aria-label="Chọn nhà con hoặc nhà cái"><button type="button" id="mobilePickP" class="active" data-side="p" aria-pressed="true">🔵 P <span class="smHandScore" id="mobileScoreP">—</span></button><button type="button" id="mobilePickB" data-side="b" aria-pressed="false">🔴 B <span class="smHandScore" id="mobileScoreB">—</span></button></div>
+<div class="cards" id="mobileCards" data-mobile-hand="p">
+<article class="hand p"><div class="hand-top"><div class="hand-title">🔵 Nhà con · P</div><div class="hand-score">Điểm Baccarat<b id="pScore">—</b></div></div><div class="hand-detail" id="pDetail">Chưa chọn lá · Tổng 0</div><div class="selected" id="pSelected"></div><div class="keys" id="pKeys"></div><div class="hand-foot"><span id="pCount">0/3 lá</span><a id="pDelete" role="button" tabindex="0">↶ Xóa lá cuối P</a></div></article>
+<article class="hand b"><div class="hand-top"><div class="hand-title">🔴 Nhà cái · B</div><div class="hand-score">Điểm Baccarat<b id="bScore">—</b></div></div><div class="hand-detail" id="bDetail">Chưa chọn lá · Tổng 0</div><div class="selected" id="bSelected"></div><div class="keys" id="bKeys"></div><div class="hand-foot"><span id="bCount">0/3 lá</span><a id="bDelete" role="button" tabindex="0">↶ Xóa lá cuối B</a></div></article>
+</div>
+<div class="savebar"><div class="result" id="roundWinner">Chưa đủ lá</div><button id="saveRound" class="strong" disabled>✓ CHỐT VÁN → TIẾP</button><button id="resetDraft" class="plain" title="Xóa lá đang nhập">Xóa lá</button></div>
+<div class="shortHistory"><div class="section-head"><b>DIỄN BIẾN Đ/S GẦN ĐÂY</b><span><small>Đ = đúng, S = sai, H = hòa, – = chờ</small> <button class="mini" id="showAllBtn">Tất cả</button></span></div><div class="history-tiles" id="historyTiles">Chưa có ván</div></div>
+<div class="more"><details id="historyDetails"><summary>🕘 Mở lịch sử / sửa ván / chèn ván thiếu</summary><div class="desc">Bấm số ván trong dãy phía trên hoặc nút Sửa ở bảng dưới. Chèn ván thiếu sẽ đẩy số các ván phía sau lên 1. Các thống kê lịch sử sau khi sửa sẽ được tính lại và không coi là kết quả dự báo tiến cứu.</div><div id="historyList"></div></details><details><summary>▾ Giải thích xếp hạng 23 rule và cách đánh giá</summary><div class="desc">Bộ 23 điều kiện được giữ cố định từ nghiên cứu trước; thứ hạng thay đổi theo từng bàn, dựa trên kết quả đã ghi nhận. Riêng P03 HÒA chung chỉ thống kê, không bỏ phiếu. Ván N là ván điều kiện, N+1/N+2/N+3 là ván xét kết quả. Mỗi ván nguồn chỉ có tối đa một phiếu; nếu cùng nguồn có hai rule ngược hướng, nguồn đó không bỏ phiếu. Dãy Đ/S cạnh rule là kết quả hồi cứu trên bàn đang ghi. <strong>Tỷ lệ hồi cứu không phải xác suất thắng tương lai</strong>. Dự đoán ghi trước ván mới được tính riêng ở mục Tiến cứu.</div></details></div>
+</section>
+<aside class="right pane" aria-label="Theo dõi phong độ và kho rule"><div class="mobilePanelGroup performanceGroup" id="mobilePerformancePanel" role="tabpanel" aria-label="Phong độ và các mẫu đang khớp">
+<div class="pickBox"><div class="pickTitle"><span>🎯 TÍN HIỆU THEO PHONG ĐỘ BÀN · VÁN <span id="nextRound">1</span></span><span class="badge" id="pickType">CHỜ KIỂM CHỨNG</span></div><div class="pickMain"><div class="pick wait" id="bigPick">CHỜ</div><div class="ballots"><span style="color:var(--p)">P <span id="voteP">0</span></span> : <span style="color:var(--b)">B <span id="voteB">0</span></span></div></div><div class="explain" id="voteExplain">Chưa có mẫu từ các ván trước phù hợp mốc N+1/N+2/N+3.</div></div>
+<div class="statsRow"><div class="statCard"><span>KIỂM CHỨNG MỚI · Đ/S/H</span><strong id="liveScore">0 / 0 / 0</strong><div class="statPills"><div class="metric d">Đ <b id="liveD">0</b></div><div class="metric s">S <b id="liveS">0</b></div><div class="metric h">H <b id="liveH">0</b></div></div><span id="livePct" class="rateMark">Chưa có %</span><small id="liveRate">Chưa có tín hiệu tiến cứu</small></div><div class="statCard"><span>HỒI CỨU TRÊN BÀN · Đ/S/H</span><strong id="backScore">0 / 0 / 0</strong><div class="statPills"><div class="metric d">Đ <b id="backD">0</b></div><div class="metric s">S <b id="backS">0</b></div><div class="metric h">H <b id="backH">0</b></div></div><span id="backPct" class="rateMark">Chưa có %</span><small id="backRate">Chưa có dữ liệu</small></div></div>
+<section class="mobileActiveMatch" aria-label="Mẫu đang khớp ván hiện tại">
+ <div class="match-head"><b>⚡ RULE KHỚP VÁN HIỆN TẠI</b><span id="mobileActiveCount">0 mẫu</span></div>
+ <div class="mobileMatchBody" id="mobileActiveRules">Chưa có mẫu khớp ở ván này.</div>
+ <small>Khớp điều kiện không có nghĩa rule đã được phép bỏ phiếu. Xem tín hiệu ở phía trên.</small>
+</section>
+<section class="leaderPanel" aria-label="Bảng xếp hạng rule theo bàn hiện tại">
+  <div class="leaderTitle"><b>🏆 RULE ĐANG HIỆU QUẢ TRÊN BÀN NÀY</b><label>Chế độ <select id="rankSensitivity" aria-label="Điều kiện xếp hạng"><option value="balanced" selected>Cân bằng · ít nhất 3 mẫu</option><option value="early">Theo dõi sớm · 2 mẫu</option><option value="strict">Chặt · ít nhất 6 mẫu</option></select></label></div>
+  <div class="leaderHint" id="leaderHint">Đang thu thập kết quả trên bàn hiện tại. Chỉ tính ván đã xảy ra trước ván cần xét.</div>
+  <div class="leaderRows" id="leaderRows"></div>
+  <div class="leaderFoot" id="leaderFoot">Đứng đầu bảng chỉ là kết quả quá khứ của bàn, chưa phải xác suất thắng ván sau.</div>
+</section>
+
+<details class="stageAudit" id="stageAudit" open>
+ <summary>📊 PHONG ĐỘ THEO GIAI ĐOẠN · ĐẦU / GIỮA / SAU 40</summary>
+ <div class="stageIntro">Giai đoạn tính theo <b>thứ tự ván đã ghi</b> trên bàn: 1–20, 21–40, 41+. Nếu bắt đầu nhập giữa shoe, đây chỉ là giai đoạn của phần dữ liệu ghi nhận. Thống kê kiểm chứng chỉ dùng phiếu đã lưu trước ván; không tự đảo P/B.</div>
+ <div id="stageNow" class="stageNow">Đang tính giai đoạn…</div>
+ <div id="stageWarning" class="stageWarning" hidden></div>
+ <div id="stageGrid" class="stageGrid"></div>
+ <div class="studyFine">Rule nổi bật: ≥10 kết quả P/B <b>đã ghi trước ván</b> trong cùng giai đoạn, đúng ≥65%. Chỉ là nhãn theo dõi; không tự cấp quyền bỏ phiếu. HÒA không tính vào mẫu số.</div>
+</details>
+
+</div><div class="mobilePanelGroup libraryGroup" id="mobileRulesPanel" role="tabpanel" aria-label="Toàn bộ mẫu và phân tích HÒA">
+<div class="mobileLibraryIntro"><b>🧩 KHO RULE & PHÂN TÍCH</b><small>Mặc định chỉ hiện mẫu đang khớp để đỡ cuộn. Chọn “Tất cả” để xem 36 điều kiện, so sánh HÒA và các bàn cũ. Tỷ lệ bên dưới là hồi cứu.</small></div>
+<section class="tieQuick" id="tieQuick" aria-live="polite"><b>🟨 HÒA: THEO ĐIỂM VÀ SỐ LÁ</b><div id="tieQuickContent" class="tieQuickContent">Chưa có ván HÒA gần đây để đối chiếu.</div></section>
+<details class="benchDetails" id="benchDetails"><summary>▾ SO SÁNH CÁC BÀN · RULE TỐT Ở TỪNG BÀN (HỒI CỨU)</summary><div class="benchTools"><span id="benchCount">8 bàn tham khảo</span><button type="button" id="clearArchives" class="mini plain">Xóa kho bàn tự lưu</button></div><div id="benchSummaries" class="benchGrid"></div></details>
+<details class="extraDetails"><summary>▾ Phân tích ngầm và HÒA theo số lá / điểm (xem thêm)</summary><div class="shadowSummary" id="shadowSummary">🔍 Theo dõi 36 điều kiện: 23 rule trước + 10 mẫu 30/10 + 3 mẫu 31/10. HÒA chung chỉ thống kê.</div>
+<div class="shadowMatches" id="shadowMatches" aria-live="polite"></div><div class="tiePanel" id="tiePanel" aria-live="polite"><div class="tieHead"><b>🟨 HÒA PHÂN TẦNG • ĐIỂM / SỐ LÁ</b><small>8 bàn tham khảo + bàn đang ghi, không tự phát phiếu</small></div><div id="tieReview">Chưa có ván nguồn HÒA ở N−1 đến N−3.</div><small>HÒA 6–6 và 7–7 có thống kê khác nhau. Mẫu thấp không được xem là quy luật.</small></div>
+</details>
+
+<details class="studyDetails" id="studyDetails" open>
+ <summary>🧪 T01–T03 · MẪU MỚI 31/10 · TOP THEO GIAI ĐOẠN <span id="studyMatchBadge">0 khớp</span></summary>
+ <p class="stageIntro">T01/T02 theo dõi ngầm; T03 là nhánh của F04. Dù lên Rule nổi bật cũng <b>không tạo thêm phiếu</b>. Mỗi mẫu có số Đ/S/H kiểm chứng thật và hồi cứu tách riêng.</p>
+ <div id="studyRows" class="studyRows"></div>
+</details>
+
+<details class="newRulesDetails" id="newRuleDetails"><summary>🧩 10 MẪU MỚI 30/10 · ĐANG KIỂM CHỨNG <span id="newMatchBadge">0 khớp</span></summary><p class="newRuleHelp">M01–M10: quét riêng trên bàn hiện tại. Tỷ lệ cũ chỉ tham khảo; ba lượt ĐÚNG liên tiếp đã ghi trước ván mới được tham gia phiếu. Cùng ván nguồn = tối đa một phiếu. <b>KHỚP ≠ ĐỀ XUẤT.</b></p><div id="newRulesPanel" class="newRulesPanel"></div></details>
+<div class="rules-head"><b>📈 RULE P/B + HÒA THEO ĐIỂM/LÁ · XẾP HẠNG RIÊNG BÀN</b><div class="seg"><button id="filterAll" class="active">Tất cả</button><button id="filterMatch">Đang khớp</button></div></div>
+<div class="rule-scroll" id="ruleScroll"><div class="rule-grid" id="rulesList"></div></div>
+<div class="bottomStats"><span><b style="color:var(--p)">P</b>: <span id="pRuleCount">0</span> rule khớp</span><span><b style="color:var(--b)">B</b>: <span id="bRuleCount">0</span> rule khớp</span><span style="color:#bed0e4">Đ/S cạnh rule = hồi cứu · P03 HÒA không phiếu</span></div><button id="libraryBtn" type="button" class="archiveButton">▤ Kho 22 mẫu · Xem hồi cứu, kiểm chứng mới và trạng thái học</button><div class="ruleLegend">⚠ Xếp hạng theo từng bàn, toàn bộ 36 điều kiện P/B được theo dõi. Ngưỡng ít mẫu chỉ để theo dõi, không bảo đảm thắng. Hồi cứu và dự đoán đã ghi trước ván luôn tách riêng.</div>
+</div></aside>
+</div>
+</div><dialog id="libraryDialog" class="libraryDialog" aria-label="Kho mẫu lịch sử">
+<div class="libHead"><div><h2>Kho mẫu đã thống kê</h2><p>16 mẫu trong báo cáo 8 bàn + 6 mẫu B bổ sung • Rule trong kho được theo dõi cùng dashboard; các mẫu trùng chung ván nguồn chỉ tính một phiếu</p></div><button type="button" id="libraryClose">✕ Đóng</button></div>
+<div class="libTools"><input id="librarySearch" type="search" placeholder="Tìm mẫu, điểm, lá tây, HÒA, số lá..." aria-label="Tìm mẫu"><select id="librarySide"><option value="all">Cả P & B</option><option value="P">Chỉ P</option><option value="B">Chỉ B</option></select><select id="libraryHigh"><option value="all">Tất cả mẫu</option><option value="high">Từ 68% và ≥20 lượt</option></select><span id="libraryCount" class="tip"></span></div>
+<div class="libList" id="libraryList"></div><div class="libNote">Các tỷ lệ là thống kê hồi cứu từ dữ liệu đã từng dùng để tìm mẫu, không chứng minh xác suất thắng tương lai. Các mẫu gần giống nhau có thể cùng kích hoạt và không được tính thành nhiều phiếu độc lập. 6 mẫu B bổ sung có thống kê được nêu riêng sau báo cáo 16 mẫu.</div>
+</dialog><div id="toast" class="toasty" role="status"></div>
+<script>
+(()=>{'use strict';
+const ranks=['A','2','3','4','5','6','7','8','9','10','J','Q','K'];
+const zero=r=>['10','J','Q','K'].includes(r),val=r=>r==='A'?1:zero(r)?0:Number(r);
+const total=a=>a.reduce((s,r)=>s+val(r),0),pts=a=>total(a)%10;
+const has=(a,x)=>a.includes(x),zcount=h=>[...h.p,...h.b].filter(zero).length;
+const score=h=>({p:pts(h.p),b:pts(h.b)});
+const ready=h=>!!h&&Array.isArray(h.p)&&Array.isArray(h.b)&&h.p.length>=2&&h.p.length<=3&&h.b.length>=2&&h.b.length<=3&&[...h.p,...h.b].every(r=>ranks.includes(r));
+const winner=h=>{if(!ready(h))return '-';const a=score(h);return a.p===a.b?'H':a.p>a.b?'P':'B'};
+const LIBRARY=[{"id":"X05","title":"B đúng 9 điểm bằng 2 lá","pick":"P","lag":2,"group":"A","old":{"good":18,"bad":4,"tie":1,"pct":81.8},"new":{"good":5,"bad":1,"tie":1,"pct":83.3},"total":{"good":23,"bad":5,"tie":2,"pct":82.1},"status":"relatively-consistent","category":"16 mẫu / 8 bàn"},{"id":"R01","title":"B=9 điểm","pick":"P","lag":2,"group":"A","old":{"good":23,"bad":6,"tie":3,"pct":79.3},"new":{"good":8,"bad":3,"tie":1,"pct":72.7},"total":{"good":31,"bad":9,"tie":4,"pct":77.5},"status":"relatively-consistent","category":"16 mẫu / 8 bàn"},{"id":"X01","title":"B thắng tự nhiên 8–9 bằng 2 lá","pick":"P","lag":2,"group":"A","old":{"good":25,"bad":9,"tie":2,"pct":73.5},"new":{"good":9,"bad":1,"tie":2,"pct":90.0},"total":{"good":34,"bad":10,"tie":4,"pct":77.3},"status":"relatively-consistent","category":"16 mẫu / 8 bàn"},{"id":"X04","title":"P và B đều 5–6 điểm","pick":"P","lag":1,"group":"C","old":{"good":14,"bad":5,"tie":3,"pct":73.7},"new":{"good":6,"bad":2,"tie":0,"pct":75.0},"total":{"good":20,"bad":7,"tie":3,"pct":74.1},"status":"relatively-consistent","category":"16 mẫu / 8 bàn"},{"id":"F01","title":"P/B hai lá; đúng 1 lá 0 điểm","pick":"P","lag":2,"group":"B","old":{"good":28,"bad":13,"tie":3,"pct":68.3},"new":{"good":12,"bad":2,"tie":1,"pct":85.7},"total":{"good":40,"bad":15,"tie":4,"pct":72.7},"status":"relatively-consistent","category":"16 mẫu / 8 bàn"},{"id":"X02","title":"B đạt 8–9 bằng 2 lá","pick":"P","lag":2,"group":"A","old":{"good":29,"bad":14,"tie":2,"pct":67.4},"new":{"good":11,"bad":1,"tie":2,"pct":91.7},"total":{"good":40,"bad":15,"tie":4,"pct":72.7},"status":"mixed","category":"16 mẫu / 8 bàn"},{"id":"R05","title":"Ván nguồn hòa","pick":"P","lag":1,"group":"D","old":{"good":25,"bad":7,"tie":3,"pct":78.1},"new":{"good":4,"bad":4,"tie":0,"pct":50.0},"total":{"good":29,"bad":11,"tie":3,"pct":72.5},"status":"declined","category":"16 mẫu / 8 bàn"},{"id":"R04","title":"Chênh 1–2; đúng 2 lá 0 điểm","pick":"B","lag":1,"group":"E","old":{"good":25,"bad":8,"tie":6,"pct":75.8},"new":{"good":3,"bad":3,"tie":1,"pct":50.0},"total":{"good":28,"bad":11,"tie":7,"pct":71.8},"status":"declined","category":"16 mẫu / 8 bàn"},{"id":"X03","title":"P 4–6 điểm; đúng một lá tây toàn ván","pick":"P","lag":1,"group":"C","old":{"good":25,"bad":10,"tie":3,"pct":71.4},"new":{"good":8,"bad":3,"tie":2,"pct":72.7},"total":{"good":33,"bad":13,"tie":5,"pct":71.7},"status":"relatively-consistent","category":"16 mẫu / 8 bàn"},{"id":"R03","title":"P/B hai lá; B lẻ","pick":"P","lag":2,"group":"B","old":{"good":33,"bad":13,"tie":4,"pct":71.7},"new":{"good":7,"bad":4,"tie":2,"pct":63.6},"total":{"good":40,"bad":17,"tie":6,"pct":70.2},"status":"mixed","category":"16 mẫu / 8 bàn"},{"id":"R02","title":"Chênh P/B ≤2; có 2 lá 0 điểm","pick":"B","lag":2,"group":"E","old":{"good":26,"bad":13,"tie":6,"pct":66.7},"new":{"good":5,"bad":1,"tie":1,"pct":83.3},"total":{"good":31,"bad":14,"tie":7,"pct":68.9},"status":"mixed","category":"16 mẫu / 8 bàn"},{"id":"F03","title":"P/B ba lá; P được 4–6 điểm","pick":"B","lag":2,"group":"F","old":{"good":17,"bad":11,"tie":3,"pct":60.7},"new":{"good":8,"bad":1,"tie":0,"pct":88.9},"total":{"good":25,"bad":12,"tie":3,"pct":67.6},"status":"new-spike","category":"16 mẫu / 8 bàn"},{"id":"R06","title":"P/B ba lá; B đạt 7–9","pick":"B","lag":3,"group":"F","old":{"good":15,"bad":7,"tie":0,"pct":68.2},"new":{"good":1,"bad":1,"tie":0,"pct":50.0},"total":{"good":16,"bad":8,"tie":0,"pct":66.7},"status":"declined","category":"16 mẫu / 8 bàn"},{"id":"F02","title":"P ba lá; điểm P+B ≤7","pick":"B","lag":2,"group":"F","old":{"good":27,"bad":20,"tie":9,"pct":57.4},"new":{"good":12,"bad":5,"tie":0,"pct":70.6},"total":{"good":39,"bad":25,"tie":9,"pct":60.9},"status":"mixed","category":"16 mẫu / 8 bàn"},{"id":"F05","title":"P ba lá, B hai lá","pick":"P","lag":1,"group":"D","old":{"good":26,"bad":23,"tie":6,"pct":53.1},"new":{"good":9,"bad":1,"tie":0,"pct":90.0},"total":{"good":35,"bad":24,"tie":6,"pct":59.3},"status":"new-spike","category":"16 mẫu / 8 bàn"},{"id":"F04","title":"B có lá A","pick":"B","lag":3,"group":"F","old":{"good":27,"bad":24,"tie":4,"pct":52.9},"new":{"good":7,"bad":1,"tie":0,"pct":87.5},"total":{"good":34,"bad":25,"tie":4,"pct":57.6},"status":"new-spike","category":"16 mẫu / 8 bàn"},{"id":"B01*","title":"P và B đều 3 lá; tổng giá trị lá P ≥ 15","pick":"B","lag":3,"group":"B","old":{"good":20,"bad":7,"tie":null,"pct":74.07407407407408},"new":{"good":5,"bad":0,"tie":null,"pct":100.0},"total":{"good":25,"bad":7,"tie":null,"pct":78.125},"status":"experimental","category":"6 mẫu B bổ sung"},{"id":"B02*","title":"P có đúng 1 lá 10/J/Q/K và kết thúc 8 điểm","pick":"B","lag":3,"group":"B","old":{"good":13,"bad":4,"tie":null,"pct":76.47058823529412},"new":{"good":3,"bad":1,"tie":null,"pct":75.0},"total":{"good":16,"bad":5,"tie":null,"pct":76.19047619047619},"status":"experimental","category":"6 mẫu B bổ sung"},{"id":"B03*","title":"P/B lệch đúng 1 điểm; P có ít nhất 2 lá A–5","pick":"B","lag":2,"group":"B","old":{"good":15,"bad":5,"tie":null,"pct":75.0},"new":{"good":4,"bad":1,"tie":null,"pct":80.0},"total":{"good":19,"bad":6,"tie":null,"pct":76.0},"status":"experimental","category":"6 mẫu B bổ sung"},{"id":"B04*","title":"P có lá 6; B có đúng 1 lá 10/J/Q/K","pick":"B","lag":1,"group":"B","old":{"good":11,"bad":4,"tie":null,"pct":73.33333333333333},"new":{"good":7,"bad":2,"tie":null,"pct":77.77777777777779},"total":{"good":18,"bad":6,"tie":null,"pct":75.0},"status":"experimental","category":"6 mẫu B bổ sung"},{"id":"B05*","title":"P/B đều 3 lá, lệch không quá 1 điểm","pick":"B","lag":2,"group":"B","old":{"good":19,"bad":8,"tie":null,"pct":70.37037037037037},"new":{"good":5,"bad":2,"tie":null,"pct":71.42857142857143},"total":{"good":24,"bad":10,"tie":null,"pct":70.58823529411765},"status":"experimental","category":"6 mẫu B bổ sung"},{"id":"B06*","title":"B có lá A, kết thúc 0–2 điểm","pick":"B","lag":2,"group":"B","old":{"good":11,"bad":5,"tie":null,"pct":68.75},"new":{"good":3,"bad":1,"tie":null,"pct":75.0},"total":{"good":14,"bad":6,"tie":null,"pct":70.0},"status":"experimental","category":"6 mẫu B bổ sung"}];
+const BENCH_TABLES=[{"name":"2026-10-23_van65 (1)","rows":[{"round":10,"p":["10","J"],"b":["10","8"]},{"round":11,"p":["5","8","3"],"b":["8","7"]},{"round":12,"p":["7","8","4"],"b":["3","10","Q"]},{"round":13,"p":["3","J","5"],"b":["9","5","Q"]},{"round":14,"p":["9","K"],"b":["8","K"]},{"round":15,"p":["6","Q"],"b":["4","2"]},{"round":16,"p":["10","J","8"],"b":["9","6"]},{"round":17,"p":["2","2","3"],"b":["J","A","8"]},{"round":18,"p":["10","9"],"b":["8","7"]},{"round":19,"p":["3","2","K"],"b":["10","5"]},{"round":20,"p":["A","5"],"b":["4","10","K"]},{"round":21,"p":["A","Q","Q"],"b":["8","9"]},{"round":22,"p":["4","K","3"],"b":["9","5","8"]},{"round":23,"p":["J","6"],"b":["10","9"]},{"round":24,"p":["3","2","8"],"b":["4","A"]},{"round":25,"p":["K","7"],"b":["5","8","7"]},{"round":26,"p":["4","6","8"],"b":["2","K","8"]},{"round":27,"p":["10","4"],"b":["A","8"]},{"round":28,"p":["Q","8"],"b":["4","6"]},{"round":29,"p":["A","6"],"b":["9","7"]},{"round":30,"p":["2","Q"],"b":["5","4"]},{"round":31,"p":["9","7"],"b":["2","J","J"]},{"round":32,"p":["2","J","5"],"b":["K","6"]},{"round":33,"p":["8","5","6"],"b":["7","3","3"]},{"round":34,"p":["J","7"],"b":["A","7"]},{"round":35,"p":["K","10","6"],"b":["A","9","4"]},{"round":36,"p":["3","7","Q"],"b":["Q","K","A"]},{"round":37,"p":["Q","3","6"],"b":["Q","7"]},{"round":38,"p":["J","6"],"b":["8","4","6"]},{"round":39,"p":["3","Q"],"b":["10","8"]},{"round":40,"p":["K","Q","8"],"b":["Q","4"]},{"round":41,"p":["6","7","6"],"b":["6","Q","K"]},{"round":42,"p":["J","J","K"],"b":["10","J","6"]},{"round":43,"p":["8","5","7"],"b":["J","5","J"]},{"round":44,"p":["J","8"],"b":["A","Q"]},{"round":45,"p":["8","4","K"],"b":["K","4"]},{"round":46,"p":["A","7"],"b":["J","9"]},{"round":47,"p":["6","4"],"b":["9","9"]},{"round":48,"p":["6","J"],"b":["4","9","7"]},{"round":49,"p":["Q","4","4"],"b":["5","2"]},{"round":50,"p":["Q","8"],"b":["8","10"]},{"round":51,"p":["2","9","6"],"b":["10","Q","5"]},{"round":52,"p":["A","A","5"],"b":["K","K","8"]},{"round":53,"p":["4","2"],"b":["3","A","5"]},{"round":54,"p":["5","Q"],"b":["K","8"]},{"round":55,"p":["7","A"],"b":["6","4"]},{"round":56,"p":["5","3","K"],"b":["J","10","9"]},{"round":57,"p":["4","Q","A"],"b":["Q","2","2"]},{"round":58,"p":["3","A","7"],"b":["2","3","J"]},{"round":59,"p":["7","Q"],"b":["5","5","9"]},{"round":60,"p":["6","K"],"b":["7","7","A"]},{"round":61,"p":["A","2","A"],"b":["7","7"]},{"round":62,"p":["9","K"],"b":["9","K"]},{"round":63,"p":["7","5","8"],"b":["5","9"]},{"round":64,"p":["10","7"],"b":["K","9"]}]},{"name":"2026-10-23_van65","rows":[{"round":16,"p":["4","8","7"],"b":["9","7"]},{"round":17,"p":["2","6"],"b":["10","5"]},{"round":18,"p":["3","10","Q"],"b":["8","8"]},{"round":19,"p":["K","5","A"],"b":["3","2"]},{"round":20,"p":["10","3","5"],"b":["K","J","10"]},{"round":21,"p":["10","6"],"b":["2","3","2"]},{"round":22,"p":["10","6"],"b":["K","3","2"]},{"round":23,"p":["10","4"],"b":["3","6"]},{"round":24,"p":["A","9","4"],"b":["5","K","6"]},{"round":25,"p":["3","6"],"b":["9","2"]},{"round":26,"p":["7","A"],"b":["3","9"]},{"round":27,"p":["J","4"],"b":["5","4"]},{"round":28,"p":["8","10"],"b":["4","4"]},{"round":29,"p":["J","9"],"b":["A","10"]},{"round":30,"p":["J","2","9"],"b":["A","Q","5"]},{"round":31,"p":["7","9"],"b":["3","3"]},{"round":32,"p":["Q","7"],"b":["7","5","K"]},{"round":33,"p":["6","6","Q"],"b":["9","5"]},{"round":34,"p":["J","7"],"b":["5","8","3"]},{"round":35,"p":["4","3"],"b":["5","A"]},{"round":36,"p":["4","6","5"],"b":["8","7","4"]},{"round":37,"p":["A","A","J"],"b":["2","9","J"]},{"round":38,"p":["3","J","5"],"b":["J","K","A"]},{"round":39,"p":["7","5","A"],"b":["7","6","4"]},{"round":40,"p":["K","4","K"],"b":["5","10"]},{"round":41,"p":["J","7"],"b":["2","J","6"]},{"round":42,"p":["J","Q","Q"],"b":["K","Q","A"]},{"round":43,"p":["3","Q","Q"],"b":["10","6"]},{"round":44,"p":["2","9","3"],"b":["5","8","Q"]},{"round":45,"p":["Q","K","4"],"b":["7","9"]},{"round":46,"p":["J","2","A"],"b":["K","3","5"]},{"round":47,"p":["6","3"],"b":["2","3"]},{"round":48,"p":["4","2"],"b":["2","A","Q"]},{"round":49,"p":["7","5","Q"],"b":["3","A"]},{"round":50,"p":["6","J","J"],"b":["9","3","Q"]},{"round":51,"p":["Q","7"],"b":["9","10"]},{"round":52,"p":["2","Q","Q"],"b":["8","2","8"]},{"round":53,"p":["2","2","Q"],"b":["Q","5"]},{"round":54,"p":["5","J"],"b":["9","10"]},{"round":55,"p":["J","3","9"],"b":["2","2"]},{"round":56,"p":["K","7"],"b":["3","8","K"]},{"round":57,"p":["K","5","A"],"b":["10","Q","J"]},{"round":58,"p":["8","A"],"b":["10","K"]},{"round":59,"p":["A","9","10"],"b":["J","5"]},{"round":60,"p":["J","7"],"b":["4","5"]},{"round":61,"p":["7","J"],"b":["Q","6"]},{"round":62,"p":["A","8"],"b":["9","4"]},{"round":63,"p":["4","A","10"],"b":["5","2"]},{"round":64,"p":["K","8"],"b":["3","10"]}]},{"name":"2026-10-23_van67","rows":[{"round":16,"p":["8","A"],"b":["J","Q"]},{"round":17,"p":["7","9"],"b":["10","3","Q"]},{"round":18,"p":["K","J","A"],"b":["3","7","4"]},{"round":19,"p":["9","9"],"b":["3","10"]},{"round":20,"p":["8","Q"],"b":["9","4"]},{"round":21,"p":["8","A"],"b":["5","J"]},{"round":22,"p":["K","5","9"],"b":["J","A","9"]},{"round":23,"p":["J","10","4"],"b":["3","8","8"]},{"round":24,"p":["9","6","6"],"b":["K","Q","4"]},{"round":25,"p":["7","Q"],"b":["J","6"]},{"round":26,"p":["7","5","8"],"b":["Q","A","J"]},{"round":27,"p":["Q","K","10"],"b":["4","Q"]},{"round":28,"p":["J","7"],"b":["Q","10","10"]},{"round":29,"p":["8","4","9"],"b":["K","2","2"]},{"round":30,"p":["3","6"],"b":["10","5"]},{"round":31,"p":["8","8"],"b":["Q","7"]},{"round":32,"p":["A","3","4"],"b":["5","2"]},{"round":33,"p":["J","3","Q"],"b":["9","4","K"]},{"round":34,"p":["9","2","5"],"b":["2","K","4"]},{"round":35,"p":["2","3","A"],"b":["8","7"]},{"round":36,"p":["Q","6"],"b":["5","3"]},{"round":37,"p":["4","K","J"],"b":["7","9"]},{"round":38,"p":["9","J"],"b":["9","K"]},{"round":39,"p":["9","K"],"b":["6","9"]},{"round":40,"p":["A","3","5"],"b":["10","Q","K"]},{"round":41,"p":["4","2"],"b":["8","6","9"]},{"round":42,"p":["J","Q","7"],"b":["9","6","7"]},{"round":43,"p":["4","10"],"b":["9","Q"]},{"round":44,"p":["J","J","3"],"b":["K","K","Q"]},{"round":45,"p":["K","7"],"b":["9","6","10"]},{"round":46,"p":["Q","J","J"],"b":["3","7","Q"]},{"round":47,"p":["6","Q"],"b":["6","9","6"]},{"round":48,"p":["9","5","4"],"b":["K","Q","7"]},{"round":49,"p":["2","4","8"],"b":["7","10"]},{"round":50,"p":["Q","5"],"b":["2","6"]},{"round":51,"p":["7","10"],"b":["Q","10","9"]},{"round":52,"p":["J","4","J"],"b":["K","A","4"]},{"round":53,"p":["K","5","J"],"b":["6","10"]},{"round":54,"p":["2","5","7"],"b":["5","6","2"]},{"round":55,"p":["K","9"],"b":["4","7"]},{"round":56,"p":["5","A"],"b":["2","4"]},{"round":57,"p":["4","4"],"b":["5","5"]},{"round":58,"p":["6","9","5"],"b":["K","5","J"]},{"round":59,"p":["2","5"],"b":["J","J","Q"]},{"round":60,"p":["4","A"],"b":["6","3"]},{"round":61,"p":["A","Q","3"],"b":["A","6"]},{"round":62,"p":["8","8"],"b":["A","2","10"]},{"round":63,"p":["10","J","9"],"b":["7","8"]},{"round":64,"p":["3","K","10"],"b":["A","3","A"]},{"round":65,"p":["5","3"],"b":["A","10"]},{"round":66,"p":["2","3","Q"],"b":["4","K"]}]},{"name":"2026-10-24_van46","rows":[{"round":1,"p":["2","8"],"b":["8","Q"]},{"round":2,"p":["J","6"],"b":["5","A"]},{"round":3,"p":["5","A"],"b":["3","2","7"]},{"round":4,"p":["6","2"],"b":["Q","K"]},{"round":5,"p":["Q","J","K"],"b":["K","Q","8"]},{"round":6,"p":["Q","K","7"],"b":["K","10","2"]},{"round":7,"p":["3","J","2"],"b":["5","7","A"]},{"round":8,"p":["4","4"],"b":["9","8"]},{"round":9,"p":["2","3","A"],"b":["10","K","5"]},{"round":10,"p":["7","4","Q"],"b":["10","10","A"]},{"round":11,"p":["9","2","2"],"b":["Q","A","Q"]},{"round":12,"p":["7","6","7"],"b":["10","5","2"]},{"round":13,"p":["K","2","8"],"b":["4","6","J"]},{"round":14,"p":["J","A","8"],"b":["8","5","K"]},{"round":15,"p":["2","3","5"],"b":["10","10","7"]},{"round":16,"p":["K","3"],"b":["7","A"]},{"round":17,"p":["Q","5","3"],"b":["2","K","8"]},{"round":18,"p":["2","9","8"],"b":["A","9","7"]},{"round":19,"p":["4","9","J"],"b":["9","4","K"]},{"round":20,"p":["Q","3","5"],"b":["8","3","A"]},{"round":21,"p":["4","9"],"b":["J","9"]},{"round":22,"p":["A","8"],"b":["8","4"]},{"round":23,"p":["9","6","10"],"b":["6","A"]},{"round":24,"p":["7","10"],"b":["K","5","9"]},{"round":25,"p":["7","5","5"],"b":["2","9","J"]},{"round":26,"p":["J","7"],"b":["10","4","J"]},{"round":27,"p":["3","J","2"],"b":["Q","4","10"]},{"round":28,"p":["4","A","A"],"b":["8","4","6"]},{"round":29,"p":["8","2","5"],"b":["5","J","K"]},{"round":30,"p":["6","Q"],"b":["5","Q","J"]},{"round":31,"p":["A","3","6"],"b":["K","7"]},{"round":32,"p":["10","A","3"],"b":["J","A","5"]},{"round":33,"p":["3","8"],"b":["9","K"]},{"round":34,"p":["7","A"],"b":["8","10"]},{"round":35,"p":["10","8"],"b":["10","10"]},{"round":36,"p":["6","J"],"b":["2","8","A"]},{"round":37,"p":["6","6","9"],"b":["K","10","2"]},{"round":38,"p":["2","4"],"b":["4","Q","7"]},{"round":39,"p":["J","5"],"b":["4","4"]},{"round":40,"p":["3","4"],"b":["9","3","K"]},{"round":41,"p":["8","A"],"b":["10","2"]},{"round":42,"p":["3","5"],"b":["6","3"]},{"round":43,"p":["7","K"],"b":["8","2","4"]},{"round":44,"p":["5","9","8"],"b":["Q","Q","4"]},{"round":45,"p":["7","K"],"b":["8","J"]}]},{"name":"2026-10-24_van64","rows":[{"round":5,"p":["4","9","5"],"b":["6","K"]},{"round":6,"p":["4","3"],"b":["6","4","8"]},{"round":7,"p":["7","8","2"],"b":["A","A","6"]},{"round":8,"p":["3","9","8"],"b":["5","9"]},{"round":9,"p":["A","8"],"b":["7","10"]},{"round":10,"p":["8","7"],"b":["9","K"]},{"round":11,"p":["7","K"],"b":["J","2","A"]},{"round":12,"p":["9","10"],"b":["6","8"]},{"round":13,"p":["5","5","6"],"b":["Q","2","9"]},{"round":14,"p":["Q","7"],"b":["2","2","2"]},{"round":15,"p":["A","A","3"],"b":["4","3"]},{"round":16,"p":["8","10"],"b":["4","6"]},{"round":17,"p":["5","7","A"],"b":["K","10","A"]},{"round":18,"p":["4","2"],"b":["10","5","J"]},{"round":19,"p":["7","6","J"],"b":["Q","7"]},{"round":20,"p":["2","10","8"],"b":["Q","10","Q"]},{"round":21,"p":["J","8"],"b":["6","4"]},{"round":22,"p":["7","Q"],"b":["2","5"]},{"round":23,"p":["7","8","5"],"b":["2","K","4"]},{"round":24,"p":["4","K","J"],"b":["5","A"]},{"round":25,"p":["10","Q","6"],"b":["8","8","Q"]},{"round":26,"p":["5","2"],"b":["5","2"]},{"round":27,"p":["Q","7"],"b":["A","9","5"]},{"round":28,"p":["Q","10","3"],"b":["7","4","J"]},{"round":29,"p":["3","A","J"],"b":["A","3"]},{"round":30,"p":["3","9","5"],"b":["7","4","J"]},{"round":31,"p":["8","J"],"b":["2","6"]},{"round":32,"p":["7","10"],"b":["8","4","J"]},{"round":33,"p":["10","K","8"],"b":["8","3","5"]},{"round":34,"p":["4","7","A"],"b":["J","2","5"]},{"round":35,"p":["6","4","K"],"b":["K","5"]},{"round":36,"p":["5","7","4"],"b":["2","Q","9"]},{"round":37,"p":["8","6","Q"],"b":["10","A","A"]},{"round":38,"p":["5","8","8"],"b":["7","10"]},{"round":39,"p":["K","K","Q"],"b":["7","7"]},{"round":40,"p":["2","5"],"b":["8","5","6"]},{"round":41,"p":["8","6","5"],"b":["K","10","6"]},{"round":42,"p":["K","3","3"],"b":["Q","A","2"]},{"round":43,"p":["10","Q","8"],"b":["A","J","10"]},{"round":44,"p":["J","2"],"b":["10","9"]},{"round":45,"p":["Q","2","J"],"b":["7","5","A"]},{"round":46,"p":["9","J"],"b":["K","K"]},{"round":47,"p":["3","3"],"b":["K","6"]},{"round":48,"p":["6","9","4"],"b":["J","10","5"]},{"round":49,"p":["3","J","4"],"b":["5","6","4"]},{"round":50,"p":["J","10"],"b":["9","Q"]},{"round":51,"p":["3","K"],"b":["5","3"]},{"round":52,"p":["5","K","4"],"b":["9","6","Q"]},{"round":53,"p":["10","10","6"],"b":["Q","2","6"]},{"round":54,"p":["A","6"],"b":["Q","7"]},{"round":55,"p":["K","2"],"b":["2","6"]},{"round":56,"p":["3","7","10"],"b":["A","A","9"]},{"round":57,"p":["7","7"],"b":["9","9"]},{"round":58,"p":["A","6"],"b":["7","J"]},{"round":59,"p":["3","3","K"],"b":["K","A","10"]},{"round":60,"p":["J","A","8"],"b":["A","4"]},{"round":61,"p":["8","Q"],"b":["Q","Q"]},{"round":62,"p":["10","J","2"],"b":["2","K","8"]},{"round":63,"p":["2","9","7"],"b":["10","Q","4"]}]},{"name":"2026-10-25_van63","rows":[{"round":16,"p":["A","3"],"b":["7","A"]},{"round":17,"p":["8","4","3"],"b":["10","5"]},{"round":18,"p":["9","6","6"],"b":["Q","K","9"]},{"round":19,"p":["7","8","9"],"b":["10","A","9"]},{"round":20,"p":["5","4"],"b":["7","A"]},{"round":21,"p":["6","J"],"b":["8","K"]},{"round":22,"p":["Q","10","2"],"b":["Q","K","8"]},{"round":23,"p":["5","2"],"b":["A","10","4"]},{"round":24,"p":["J","5","A"],"b":["7","5","4"]},{"round":25,"p":["5","A"],"b":["Q","Q","A"]},{"round":26,"p":["7","7","8"],"b":["10","7"]},{"round":27,"p":["9","3","10"],"b":["2","A","4"]},{"round":28,"p":["Q","5","8"],"b":["3","J","4"]},{"round":29,"p":["K","7"],"b":["4","7","10"]},{"round":30,"p":["8","6","7"],"b":["3","K","10"]},{"round":31,"p":["Q","Q","10"],"b":["8","3","Q"]},{"round":32,"p":["9","A","A"],"b":["3","8","10"]},{"round":33,"p":["Q","Q"],"b":["3","6"]},{"round":34,"p":["2","6"],"b":["A","7"]},{"round":35,"p":["5","J","K"],"b":["A","A","2"]},{"round":36,"p":["J","3"],"b":["9","Q"]},{"round":37,"p":["5","6","J"],"b":["Q","A","A"]},{"round":38,"p":["5","6","8"],"b":["8","7"]},{"round":39,"p":["6","7"],"b":["8","A"]},{"round":40,"p":["10","5","9"],"b":["Q","2","10"]},{"round":41,"p":["7","7","4"],"b":["7","7","8"]},{"round":42,"p":["9","Q"],"b":["Q","3"]},{"round":43,"p":["Q","2","K"],"b":["K","7"]},{"round":44,"p":["J","8"],"b":["2","5"]},{"round":45,"p":["Q","A","4"],"b":["10","K","5"]},{"round":46,"p":["9","9"],"b":["5","5"]},{"round":47,"p":["3","7","K"],"b":["A","6"]},{"round":48,"p":["K","6","4"],"b":["7","7"]},{"round":49,"p":["9","J"],"b":["3","J"]},{"round":50,"p":["J","4","8"],"b":["3","Q","5"]},{"round":51,"p":["6","2"],"b":["2","3"]},{"round":52,"p":["2","2","A"],"b":["J","5"]},{"round":53,"p":["Q","2","5"],"b":["J","6"]},{"round":54,"p":["Q","8"],"b":["4","5"]},{"round":55,"p":["J","8"],"b":["10","7"]},{"round":56,"p":["9","6","2"],"b":["2","5"]},{"round":57,"p":["2","4"],"b":["7","K"]},{"round":58,"p":["2","5"],"b":["4","3"]},{"round":59,"p":["2","Q","J"],"b":["3","2"]},{"round":60,"p":["2","2","K"],"b":["4","8","3"]},{"round":61,"p":["6","8","2"],"b":["9","8"]},{"round":62,"p":["10","8"],"b":["4","5"]}]},{"name":"Muc_1_2_van65_2026-10-26","rows":[{"round":3,"p":["K","7"],"b":["10","Q","K"]},{"round":4,"p":["A","3","5"],"b":["8","3","9"]},{"round":5,"p":["Q","K","8"],"b":["3","8","4"]},{"round":6,"p":["7","A"],"b":["6","5"]},{"round":7,"p":["4","Q","5"],"b":["6","8","K"]},{"round":8,"p":["7","2"],"b":["5","5"]},{"round":9,"p":["4","3"],"b":["8","7","2"]},{"round":10,"p":["Q","4","3"],"b":["6","6","6"]},{"round":11,"p":["5","Q","J"],"b":["3","J","J"]},{"round":12,"p":["10","4"],"b":["3","5"]},{"round":13,"p":["7","8","Q"],"b":["A","A","8"]},{"round":14,"p":["9","K"],"b":["5","J"]},{"round":15,"p":["6","5"],"b":["8","10"]},{"round":16,"p":["2","9","K"],"b":["3","Q","Q"]},{"round":17,"p":["J","9"],"b":["A","10"]},{"round":18,"p":["5","K","J"],"b":["10","K","Q"]},{"round":19,"p":["6","3"],"b":["9","J"]},{"round":20,"p":["K","4"],"b":["4","5"]},{"round":21,"p":["Q","6"],"b":["10","J","5"]},{"round":22,"p":["K","10","8"],"b":["9","4"]},{"round":23,"p":["6","3"],"b":["2","J"]},{"round":24,"p":["J","6"],"b":["J","Q","A"]},{"round":25,"p":["5","Q","3"],"b":["6","9"]},{"round":26,"p":["3","5"],"b":["6","9"]},{"round":27,"p":["6","6"],"b":["8","K"]},{"round":28,"p":["K","A","Q"],"b":["2","8","4"]},{"round":29,"p":["3","K","4"],"b":["J","10","4"]},{"round":30,"p":["K","7"],"b":["3","J","6"]},{"round":31,"p":["6","K"],"b":["K","4","8"]},{"round":32,"p":["3","3","9"],"b":["J","6"]},{"round":33,"p":["K","9"],"b":["Q","Q"]},{"round":34,"p":["A","5"],"b":["4","2"]},{"round":35,"p":["K","7"],"b":["8","K"]},{"round":36,"p":["A","5"],"b":["Q","8"]},{"round":37,"p":["A","5"],"b":["9","7"]},{"round":38,"p":["2","8","5"],"b":["7","8","6"]},{"round":39,"p":["J","2","4"],"b":["5","7","A"]},{"round":40,"p":["10","7"],"b":["3","J","6"]},{"round":41,"p":["A","A","2"],"b":["9","3","4"]},{"round":42,"p":["4","9","8"],"b":["K","A","A"]},{"round":43,"p":["9","4"],"b":["7","2"]},{"round":44,"p":["5","9"],"b":["9","10"]},{"round":45,"p":["7","10"],"b":["10","K","9"]},{"round":46,"p":["6","10"],"b":["3","3"]},{"round":47,"p":["5","4","Q"],"b":["Q","Q","10"]},{"round":48,"p":["J","4","8"],"b":["3","8","9"]},{"round":49,"p":["9","6","K"],"b":["6","7","Q"]},{"round":50,"p":["K","3","A"],"b":["2","10","9"]},{"round":51,"p":["A","6"],"b":["J","2","7"]},{"round":52,"p":["J","Q","A"],"b":["5","10"]},{"round":53,"p":["2","10","6"],"b":["9","6","6"]},{"round":54,"p":["9","7"],"b":["9","J"]},{"round":55,"p":["A","8"],"b":["J","10"]},{"round":56,"p":["4","2"],"b":["3","J","8"]},{"round":57,"p":["K","10","4"],"b":["7","7","K"]},{"round":58,"p":["10","8"],"b":["8","A"]},{"round":59,"p":["7","4","9"],"b":["9","8"]},{"round":60,"p":["J","9"],"b":["K","10"]},{"round":61,"p":["8","J","Q"],"b":["K","A","8"]},{"round":62,"p":["8","2","Q"],"b":["A","Q"]},{"round":63,"p":["6","A"],"b":["10","A","A"]},{"round":64,"p":["2","10","10"],"b":["3","3"]}]},{"name":"Rule_Chinh_Phu_2026-10-26","rows":[{"round":1,"p":["5","A"],"b":["2","10","3"]},{"round":2,"p":["3","J","10"],"b":["4","10"]},{"round":3,"p":["2","9","3"],"b":["9","8"]},{"round":4,"p":["5","3"],"b":["Q","10"]},{"round":5,"p":["2","4"],"b":["9","7"]},{"round":6,"p":["6","2"],"b":["7","5"]},{"round":7,"p":["6","8","5"],"b":["5","9","6"]},{"round":8,"p":["7","A"],"b":["5","K"]},{"round":9,"p":["7","6","10"],"b":["2","8","2"]},{"round":10,"p":["J","A","10"],"b":["5","Q"]},{"round":11,"p":["7","2"],"b":["3","A"]},{"round":12,"p":["8","J"],"b":["4","8"]},{"round":13,"p":["2","K","10"],"b":["5","5","Q"]},{"round":14,"p":["2","K","7"],"b":["K","6","9"]},{"round":15,"p":["8","8"],"b":["K","9"]},{"round":16,"p":["4","5"],"b":["6","2"]},{"round":17,"p":["6","3"],"b":["7","9"]},{"round":18,"p":["K","2","5"],"b":["2","K","4"]},{"round":19,"p":["6","9"],"b":["9","9"]},{"round":20,"p":["4","9","10"],"b":["7","Q"]},{"round":21,"p":["J","9"],"b":["K","7"]},{"round":22,"p":["5","A"],"b":["J","6"]},{"round":23,"p":["2","10","A"],"b":["K","2","Q"]},{"round":24,"p":["Q","4","6"],"b":["2","K","3"]},{"round":25,"p":["10","K"],"b":["5","4"]},{"round":26,"p":["J","J","J"],"b":["8","6"]}]}];
+const RULES=[
+{id:'P01',side:'P',k:2,name:'B được đúng 9 điểm',note:'B đạt 9 điểm, số lá bất kỳ',test:h=>pts(h.b)===9},
+{id:'B01',side:'B',k:3,name:'Đều 3 lá · tổng P ≥15',note:'P và B đều 3 lá; tổng lá P ≥15',test:h=>h.p.length===3&&h.b.length===3&&total(h.p)>=15},
+{id:'P02',side:'P',k:2,name:'2–2 lá · đúng 1 lá tây',note:'Cả hai 2 lá; cả ván đúng 1 lá 10/J/Q/K',test:h=>h.p.length===2&&h.b.length===2&&zcount(h)===1},
+{id:'B02',side:'B',k:3,name:'P có 1 lá tây · đạt 8',note:'P có đúng 1 lá 0 điểm, điểm P = 8',test:h=>h.p.filter(zero).length===1&&pts(h.p)===8},
+{id:'P03',side:'P',k:1,name:'HÒA mọi điểm · chỉ thống kê',note:'P và B bằng điểm; đã ngừng bỏ phiếu P mặc định vì điểm/số lá Hòa khác nhau',test:h=>pts(h.p)===pts(h.b)},
+{id:'B03',side:'B',k:2,name:'Lệch 1 · P có 2 lá nhỏ',note:'Chênh đúng 1 điểm; P có ≥2 lá A–5',test:h=>Math.abs(pts(h.p)-pts(h.b))===1&&h.p.filter(r=>val(r)>=1&&val(r)<=5).length>=2},
+{id:'P04',side:'P',k:1,name:'P kết thúc 3 điểm',note:'Điểm Baccarat P = 3',test:h=>pts(h.p)===3},
+{id:'B04',side:'B',k:1,name:'P có 6 · B có 1 lá tây',note:'P chứa lá 6, B có đúng 1 lá 0 điểm',test:h=>has(h.p,'6')&&h.b.filter(zero).length===1},
+{id:'P05',side:'P',k:1,name:'P/B cùng 5–6 điểm',note:'Điểm P, B đều trong 5–6',test:h=>[5,6].includes(pts(h.p))&&[5,6].includes(pts(h.b))},
+{id:'B05',side:'B',k:2,name:'Đều 3 lá · lệch ≤1',note:'Cả P/B 3 lá; chênh điểm ≤1',test:h=>h.p.length===3&&h.b.length===3&&Math.abs(pts(h.p)-pts(h.b))<=1},
+{id:'P06',side:'P',k:1,name:'P 3 lá · B 2 lá',note:'Nhà con 3 lá; nhà cái 2 lá',test:h=>h.p.length===3&&h.b.length===2},
+{id:'B06',side:'B',k:2,name:'B có A · điểm 0–2',note:'B có lá A và kết thúc 0, 1 hoặc 2 điểm',test:h=>has(h.b,'A')&&pts(h.b)<=2}
+];
+
+// Tất cả 22 mục kho được ghép với 12 rule cũ. 11 mục khác biệt được theo dõi ngầm.
+// Cùng một điều kiện tương đương chỉ giữ một bản test; không cộng phiếu trùng nguồn.
+const LIB_TO_CORE={
+ 'R01':'P01','B01*':'B01','F01':'P02','B02*':'B02',
+ 'R05':'P03','B03*':'B03','X04':'P05','B04*':'B04',
+ 'F05':'P06','B05*':'B05','B06*':'B06'
+};
+const AUX_RULES=[
+ {id:'X05',side:'P',k:2,name:'B đúng 9 bằng 2 lá',note:'B có 2 lá và 9 điểm',test:h=>h.b.length===2&&pts(h.b)===9},
+ {id:'X01',side:'P',k:2,name:'B thắng 8–9 bằng 2 lá',note:'B 2 lá, 8–9 điểm và thắng ván nguồn',test:h=>h.b.length===2&&[8,9].includes(pts(h.b))&&winner(h)==='B'},
+ {id:'X02',side:'P',k:2,name:'B 8–9 bằng 2 lá',note:'B có 2 lá và đạt 8 hoặc 9 điểm',test:h=>h.b.length===2&&[8,9].includes(pts(h.b))},
+ {id:'X03',side:'P',k:1,name:'P 4–6 · đúng 1 lá tây',note:'P đạt 4–6 điểm; toàn ván có một lá tây',test:h=>pts(h.p)>=4&&pts(h.p)<=6&&zcount(h)===1},
+ {id:'R04',side:'B',k:1,name:'Lệch 1–2 · đúng 2 lá tây',note:'Chênh điểm 1–2; toàn ván có 2 lá 10/J/Q/K',test:h=>[1,2].includes(Math.abs(pts(h.p)-pts(h.b)))&&zcount(h)===2},
+ {id:'R03',side:'P',k:2,name:'Hai bên 2 lá · B lẻ',note:'P/B đều 2 lá, điểm B là số lẻ',test:h=>h.p.length===2&&h.b.length===2&&pts(h.b)%2===1},
+ {id:'R02',side:'B',k:2,name:'Lệch ≤2 · đúng 2 lá tây',note:'Chênh điểm P/B tối đa 2, toàn ván 2 lá tây',test:h=>Math.abs(pts(h.p)-pts(h.b))<=2&&zcount(h)===2},
+ {id:'F03',side:'B',k:2,name:'Đều 3 lá · P 4–6',note:'Cả hai bên 3 lá, điểm P 4–6',test:h=>h.p.length===3&&h.b.length===3&&pts(h.p)>=4&&pts(h.p)<=6},
+ {id:'R06',side:'B',k:3,name:'Đều 3 lá · B 7–9',note:'Cả hai bên 3 lá, điểm B từ 7 đến 9',test:h=>h.p.length===3&&h.b.length===3&&pts(h.b)>=7&&pts(h.b)<=9},
+ {id:'F02',side:'B',k:2,name:'P 3 lá · tổng điểm P+B ≤7',note:'P có 3 lá; tổng hai điểm Baccarat không quá 7',test:h=>h.p.length===3&&pts(h.p)+pts(h.b)<=7},
+ {id:'F04',side:'B',k:3,name:'B có lá A',note:'B có ít nhất một lá A',test:h=>has(h.b,'A')}
+];
+
+// M01–M10: ỨNG VIÊN 30/10; học riêng, chỉ vào phiếu sau 3 dự đoán ngầm đúng liên tiếp đã ghi TRƯỚC ván.
+const NEW_RULES=[
+ {id:"M01",side:"B",k:2,name:"B 0–2 điểm · có lá tây",note:"B được 0–2 điểm Baccarat và có ít nhất một lá 10/J/Q/K",group:'candidate-30oct',test:h=>pts(h.b)<=2&&h.b.some(zero)},
+ {id:"M02",side:"B",k:2,name:"Lệch ≤1 · P một lá tây",note:"P/B chênh 0–1 điểm, P có đúng một lá 10/J/Q/K",group:'candidate-30oct',test:h=>Math.abs(pts(h.p)-pts(h.b))<=1&&h.p.filter(zero).length===1},
+ {id:"M03",side:"P",k:3,name:"P 2 lá, B 3 lá · không A",note:"P có 2 lá, B 3 lá; không bên nào chứa A",group:'candidate-30oct',test:h=>h.p.length===2&&h.b.length===3&&!has(h.p,'A')&&!has(h.b,'A')},
+ {id:"M04",side:"B",k:1,name:"P 4–6 · ≥2 lá tây",note:"P được 4–6 điểm Baccarat, toàn ván có ít nhất 2 lá 10/J/Q/K",group:'candidate-30oct',test:h=>pts(h.p)>=4&&pts(h.p)<=6&&zcount(h)>=2},
+ {id:"M05",side:"P",k:3,name:"P 7–9 · B 3 lá",note:"P được 7–9 điểm Baccarat, B có đúng 3 lá",group:'candidate-30oct',test:h=>pts(h.p)>=7&&pts(h.p)<=9&&h.b.length===3},
+ {id:"M06",side:"B",k:2,name:"B 0–2 · có đôi đồng điểm",note:"B được 0–2 điểm và có hai lá mang giá trị Baccarat bằng nhau",group:'candidate-30oct',test:h=>pts(h.b)<=2&&new Set(h.b.map(val)).size<h.b.length},
+ {id:"M07",side:"B",k:2,name:"P/B 3–3 · B có đôi đồng điểm",note:"P và B đều 3 lá, B có hai lá cùng giá trị Baccarat",group:'candidate-30oct',test:h=>h.p.length===3&&h.b.length===3&&new Set(h.b.map(val)).size<h.b.length},
+ {id:"M08",side:"B",k:3,name:"P 8–9 bằng 2 lá · tổng B ≥5",note:"P có 2 lá đạt 8 hoặc 9 điểm; tổng giá trị tất cả lá B ≥5",group:'candidate-30oct',test:h=>h.p.length===2&&[8,9].includes(pts(h.p))&&total(h.b)>=5},
+ {id:"M09",side:"B",k:2,name:"Lệch ≤2 · P một lá tây",note:"P/B chênh không quá 2 điểm, P đúng một lá 10/J/Q/K",group:'candidate-30oct',test:h=>Math.abs(pts(h.p)-pts(h.b))<=2&&h.p.filter(zero).length===1},
+ {id:"M10",side:"P",k:2,name:"B 7–9 · toàn ván một lá tây",note:"B đạt 7–9 điểm, toàn ván đúng một lá 10/J/Q/K",group:'candidate-30oct',test:h=>pts(h.b)>=7&&pts(h.b)<=9&&zcount(h)===1},
+];
+
+
+// T01-T03: rule nghiên cứu sau ngày 31/10, KHÔNG tham gia phiếu chính.
+// Không dùng tỷ lệ hậu nghiệm từ 13 bàn để cấp quyền dự đoán.
+const STUDY_RULES=[
+ {id:'T01',side:'P',k:3,name:'P 3 lá · B 2 lá · đúng 1 lá tây',note:'P 3 lá, B 2 lá, toàn ván đúng một lá 10/J/Q/K. N+3 → P.',group:'candidate-31oct',test:h=>h.p.length===3&&h.b.length===2&&zcount(h)===1},
+ {id:'T02',side:'B',k:3,name:'P 8–9 điểm · tổng lá B 6–9',note:'P có điểm Baccarat 8 hoặc 9, tổng giá trị tất cả lá B từ 6 đến 9. N+3 → B.',group:'candidate-31oct',test:h=>[8,9].includes(pts(h.p))&&total(h.b)>=6&&total(h.b)<=9},
+ {id:'T03',side:'B',k:3,name:'B có A · P đúng 1 lá tây',note:'B có ít nhất một A, P có đúng một lá 10/J/Q/K. Nhánh phân tích F04, KHÔNG phiếu riêng. N+3 → B.',group:'branch-f04',test:h=>has(h.b,'A')&&h.p.filter(zero).length===1}
+];
+
+const ALL_RULES=[...RULES,...AUX_RULES,...NEW_RULES,...STUDY_RULES];
+// Every distinct TIE situation is considered separately by Baccarat point,
+// P/B card count (2-2, 2-3, 3-2, 3-3), and future distance N+1..N+3.
+// Definitions are based ONLY on source-hand attributes, never future winners.
+let TIE_RULES=[];
+function makeTieCandidates(rows){
+ const tieSources=rows.filter(h=>ready(h)&&winner(h)==='H');
+ const points=[...new Set(tieSources.map(h=>pts(h.p)))].sort((a,b)=>a-b);
+ const shapes=[...new Set(tieSources.map(h=>`${h.p.length}-${h.b.length}`))].sort();
+ const combos=[...new Set(tieSources.map(h=>`${pts(h.p)}|${h.p.length}-${h.b.length}`))].sort();
+ const defs=[];
+ for(const point of points)defs.push({id:`H${point}`,kind:'point',point,shape:null,label:`HÒA ${point}–${point} điểm`});
+ for(const shape of shapes)defs.push({id:`HL${shape}`,kind:'cards',point:null,shape,label:`HÒA P/B ${shape} lá`});
+ for(const combo of combos){const [pt,shape]=combo.split('|');defs.push({id:`H${pt}L${shape}`,kind:'combined',point:+pt,shape,label:`HÒA ${pt}–${pt} · P/B ${shape} lá`})}
+ const rules=[];
+ for(const d of defs)for(let lag=1;lag<=3;lag++)for(const side of ['P','B']){
+  const definition=d;
+  rules.push({id:`${d.id}N${lag}${side}`,side,k:lag,name:`${d.label} → ${side} tại N+${lag}`,
+   note:`Chỉ phân tích HÒA ${d.kind==='point'?'theo điểm':d.kind==='cards'?'theo số lá':'cả điểm và số lá'}. ${d.label}`,
+   tieKind:d.kind,tiePoint:d.point,tieShape:d.shape,
+   test:h=>winner(h)==='H'&&(definition.point===null||pts(h.p)===definition.point)
+     &&(definition.shape===null||`${h.p.length}-${h.b.length}`===definition.shape)});
+ }
+ return rules;
+}
+function rebuildTieCandidates(){TIE_RULES=makeTieCandidates(data.records);}
+const allEvaluatedRules=()=>ALL_RULES.concat(TIE_RULES);
+const RULE_BY_LIB=new Map(LIBRARY.map(x=>[x.id,ALL_RULES.find(r=>r.id===(LIB_TO_CORE[x.id]||x.id))]));
+if(RULE_BY_LIB.size!==22||Array.from(RULE_BY_LIB.values()).some(x=>!x))throw Error('Kho 22 mẫu chưa ánh xạ đầy đủ');
+const RULE_IDS=new Set(ALL_RULES.map(x=>x.id));
+
+const $=id=>document.getElementById(id),storeKey='toan_hoc_one_screen_12rules_v1';
+let data={records:[],locked:{},liveFrom:1};let archivedTables=[];let draft={p:[],b:[]};let round=1,filter='all',historyAll=false;
+const byRound=()=>new Map(data.records.map(h=>[h.round,h]));
+const maxRound=()=>Math.max(0,...data.records.map(h=>h.round));
+const rankConfig={early:{n:2,rate:.60},balanced:{n:3,rate:.60},strict:{n:6,rate:.65}};
+let rankMode='balanced', rankFilter='all';
+function scoreBefore(rule,map,target){
+ let D=0,S=0,H=0,seq=[];
+ for(const h of data.records){
+  if(h.round>=target||!ready(h))continue;
+  const src=map.get(h.round-rule.k);
+  if(!ready(src)||!rule.test(src))continue;
+  const w=winner(h),st=w==='H'?'H':w===rule.side?'D':'S';
+  seq.push(st);if(st==='D')D++;else if(st==='S')S++;else H++;
+ }
+ const clean=seq.filter(v=>v!=='H'),recent=clean.slice(-6),recentD=recent.filter(v=>v==='D').length;
+ const n=D+S,rate=n?D/n:0,recentRate=recent.length?recentD/recent.length:0;
+ // Shrink noisy small samples toward .50; not a calibrated probability.
+ const shrunk=(D+3)/(n+6),weighted=.7*shrunk+.3*((recentD+2)/(recent.length+4));
+ const cfg=rankConfig[rankMode];const qualifies=n>=cfg.n&&D>=Math.min(2,cfg.n)&&rate>=cfg.rate&&recentRate>=.5;
+ return {D,S,H,n,rate,seq:seq.slice(-6),recentRate,weighted,qualifies};
+}
+function ruleRank(map,target){return allEvaluatedRules().filter(r=>r.id!=='P03'&&!r.id.startsWith('T')).map(r=>({...r,performance:scoreBefore(r,map,target)})).sort((a,b)=>
+  Number(b.performance.qualifies)-Number(a.performance.qualifies)||b.performance.weighted-a.performance.weighted||b.performance.n-a.performance.n);
+}
+const votesFor=(target,map)=>{
+ const all=ruleMarkersFor(target,map);
+ const rank=ruleRank(map,target), rankedById=new Map(rank.map(x=>[x.id,x]));
+ const hits=all.filter(x=>x.id!=='P03'&&!x.id.startsWith('T')).map(x=>({...x,...{performance:rankedById.get(x.id).performance}}));
+ const groups=new Map();for(const x of hits){const key=x.sourceRound;const q=groups.get(key)||[];q.push(x);groups.set(key,q)}
+ let P=0,B=0,scoreP=0,scoreB=0;const valid=[],conflicts=[];
+ for(const [source,items] of groups){
+  const usable=items.filter(x=>x.performance.qualifies && (!x.id.startsWith('M') || verifiedFor(NEW_RULES.find(r=>r.id===x.id),target).streak>=3));
+  if(!usable.length)continue;
+  const ps=usable.filter(x=>x.side==='P').sort((a,b)=>b.performance.weighted-a.performance.weighted),
+        bs=usable.filter(x=>x.side==='B').sort((a,b)=>b.performance.weighted-a.performance.weighted);
+  const p=ps[0],b=bs[0];
+  // Only one ballot for a single source. Competing sides require a real ranking gap.
+  if(p&&b&&Math.abs(p.performance.weighted-b.performance.weighted)<.10){conflicts.push(source);continue;}
+  const chosen=!p?b:!b?p:p.performance.weighted>b.performance.weighted?p:b;
+  const pick=chosen.side;if(pick==='P'){P++;scoreP+=chosen.performance.weighted}else{B++;scoreB+=chosen.performance.weighted}
+  valid.push({source,side:pick,rules:usable,leader:chosen.id,weight:chosen.performance.weighted});
+ }
+ const delta=scoreP-scoreB;let pick='CHỜ';
+ if(P+B){if(P>B&&delta>.07)pick='P';else if(B>P&&delta<-.07)pick='B';else if(P===B&&Math.abs(delta)>.18)pick=delta>0?'P':'B';}
+ return {pick,P,B,scoreP,scoreB,hits,valid,conflicts,all,promoted:new Set(rank.filter(x=>x.performance.qualifies).map(x=>x.id)),rank};
+};
+// Phong độ ngoài mẫu: chỉ lấy ảnh chụp mẫu đã ghi TRƯỚC ván.
+function verifiedFor(rule,before=Infinity){
+ let D=0,S=0,H=0,seq=[];
+ const map=byRound();
+ const keys=Object.keys(data.locked).map(Number).filter(n=>n<before).sort((a,b)=>a-b);
+ for(const n of keys){const snapshot=data.locked[n];if(!Array.isArray(snapshot.ruleMarks)||!snapshot.ruleMarks.some(x=>x.id===rule.id))continue;
+   const h=map.get(n);if(!ready(h))continue;const actual=winner(h);
+   const value=actual==='H'?'H':actual===rule.side?'D':'S';seq.push(value);
+   if(value==='D')D++;else if(value==='S')S++;else H++;
+ }
+ const scorable=seq.filter(x=>x!=='H'),streak=(()=>{let c=0;for(let i=scorable.length-1;i>=0&&scorable[i]==='D';i--)c++;return c})();
+ return {D,S,H,streak,on:streak>=3,trail:seq.slice(-6)};
+}
+function ruleMarkersFor(target,map){return allEvaluatedRules().filter(rule=>{const src=map.get(target-rule.k);return ready(src)&&rule.test(src)}).map(rule=>({id:rule.id,sourceRound:target-rule.k,side:rule.side}));}
+const statsFor=(rule,map)=>{let D=0,S=0,H=0,trail=[];for(const h of data.records){const source=map.get(h.round-rule.k);if(!ready(source)||!ready(h)||!rule.test(source))continue;const w=winner(h);let v=w==='H'?'H':w===rule.side?'D':'S';if(v==='D')D++;else if(v==='S')S++;else H++;trail.push(v)}return {D,S,H,trail:trail.slice(-5)};};
+function retro(map){let D=0,S=0,H=0,picks=0;const steps=new Map();for(const h of data.records){const v=votesFor(h.round,map);const act=winner(h);let st='–';if(v.pick!=='CHỜ'){picks++;if(act==='H'){H++;st='H'}else if(v.pick===act){D++;st='D'}else{S++;st='S'}}steps.set(h.round,st)}return {D,S,H,picks,steps};}
+function actualProspective(){let D=0,S=0,H=0;const map=byRound();for(const [n,f] of Object.entries(data.locked)){const h=map.get(Number(n));if(!h||!ready(h)||!['P','B'].includes(f.pick))continue;const w=winner(h);if(w==='H')H++;else if(w===f.pick)D++;else S++;}return {D,S,H};}
+function tone(v){return v==='D'?'good':v==='S'?'bad':v==='H'?'tie':'empty'}
+function escapeHTML(s){return String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
+function store(){try{localStorage.setItem(storeKey,JSON.stringify(data));}catch(e){$('saveNotice').textContent='⚠ Trình duyệt không lưu được';}}
+function toast(msg){const el=$('toast');el.textContent=msg;el.style.display='block';clearTimeout(toast.t);toast.t=setTimeout(()=>el.style.display='none',3100)}
+function cleanDraft(){draft={p:[],b:[]}}
+function setRound(n){n=Math.floor(Number(n));if(!Number.isFinite(n)||n<1||n>99999){toast('Số ván phải trong khoảng 1–99999.');return;}round=n;const entry=byRound().get(n);draft=entry?{p:entry.p.slice(),b:entry.b.slice()}:{p:[],b:[]};render()}
+function formatDetail(side){const a=draft[side],hand=side==='p'?'P':'B';$(side+'Score').textContent=a.length?String(pts(a)):'—';$(side+'Detail').textContent=a.length?a.map(r=>r+'('+val(r)+')').join(' + ')+` = ${total(a)} · ${a.length} lá · ${a.filter(zero).length} lá tây`:'Chưa chọn lá · Tổng 0';$(side+'Count').textContent=`${a.length}/3 lá`;const target=$(side+'Selected');target.replaceChildren();for(let i=0;i<a.length;i++){let span=document.createElement('span');span.className='chip';span.append(document.createTextNode(a[i]));let x=document.createElement('button');x.textContent='×';x.title='Bỏ lá '+a[i];x.onclick=()=>{draft[side].splice(i,1);render()};span.append(x);target.append(span)} }
+function buildKeys(){for(const side of ['p','b']){const el=$(side+'Keys');for(const rank of ranks){const b=document.createElement('button');b.type='button';b.className='key'+(zero(rank)?' zero':'');b.textContent=rank;b.onclick=()=>{if(draft[side].length>=3)return toast('Mỗi bên tối đa 3 lá.');draft[side].push(rank);render()};el.append(b)}}}
+function renderHistory(re, map){const target=$('historyTiles');target.replaceChildren();const hs=data.records.slice(historyAll?0:-32);if(!hs.length){target.textContent='Chưa có dữ liệu bàn';}for(const h of hs){let t=document.createElement('div');const cls=data.locked[h.round]?.pick&&data.locked[h.round].pick!=='CHỜ'&&data.liveFrom<=h.round?(()=>{const w=winner(h);return w==='H'?'H':w===data.locked[h.round].pick?'D':'S'})():re.steps.get(h.round)||'–';t.className='tile '+tone(cls);t.title=`Ván ${h.round} · Thực tế ${winner(h)} · Đ/S: ${cls} · Bấm để sửa`;t.innerHTML=`<span class="n">${h.round}</span><span class="v">${escapeHTML(cls)}</span>`;t.onclick=()=>setRound(h.round);target.append(t)}
+ const pane=$('historyList');pane.replaceChildren();const tbl=document.createElement('table');tbl.className='historyTable';tbl.innerHTML='<thead><tr><th>Ván</th><th>Lá P</th><th>Lá B</th><th>Thắng</th><th>Đ/S</th><th>Sửa</th></tr></thead>';let body=document.createElement('tbody');for(const h of data.records.slice().reverse()){const tr=document.createElement('tr');const v=re.steps.get(h.round)||'–';for(const txt of [h.round,h.p.join(' + '),h.b.join(' + '),winner(h),v]){const td=document.createElement('td');td.textContent=txt;tr.append(td)}const td=document.createElement('td'),b=document.createElement('button');b.className='mini';b.textContent='Sửa';b.onclick=()=>{setRound(h.round);window.scrollTo({top:0,behavior:'smooth'})};td.append(b);tr.append(td);body.append(tr)}tbl.append(body);pane.append(tbl);
+}
+function percentTag(d,s){const n=d+s;if(!n)return {txt:'—',tone:'empty'};const rate=100*d/n;return {txt:rate.toFixed(0)+'%',tone:rate>=70?'good':rate>=55?'mid':'bad'};}
+function renderShadow(map,vote){
+ const host=$('shadowMatches');host.replaceChildren();
+ const all=vote.all.filter(m=>AUX_RULES.some(r=>r.id===m.id));
+ const on=all.filter(m=>vote.promoted.has(m.id)).length;
+ $('shadowSummary').textContent=`🔍 ĐANG QUÉT ${ALL_RULES.length-1} rule P/B + ${TIE_RULES.length} biến thể HÒA theo điểm/lá · ${all.length} mẫu bổ sung khớp · ${on} đạt phong độ bàn`;
+ if(!all.length){const n=document.createElement('span');n.className='shadowChip';n.textContent='Chưa có mẫu bổ sung khớp ván này · 21 mẫu bổ sung vẫn học ngầm';host.append(n);return;}
+ for(const m of all.slice(0,5)){
+  const r=AUX_RULES.find(x=>x.id===m.id),t=verifiedFor(r);
+  const el=document.createElement('span');el.className='shadowChip '+r.side.toLowerCase()+(vote.promoted.has(m.id)?' on':'');
+  el.textContent=`${r.id} → ${r.side} · N+${r.k}`;
+  const sub=document.createElement('small');sub.textContent=`${r.name} · ${t.D}Đ/${t.S}S ngoài mẫu · ${vote.promoted.has(m.id)?'NỔI BẬT BÀN':'ĐANG THEO DÕI'}`;el.append(sub);host.append(el);
+ }
+ if(all.length>5){const n=document.createElement('span');n.className='shadowChip';n.textContent=`+${all.length-5} mẫu khác trong Kho`;host.append(n)}
+}
+function renderRules(map,pick){
+ const content=$('rulesList');content.replaceChildren();let countP=0,countB=0;
+ let visible=pick.rank.filter(r=>!r.tieKind||r.performance.n>0||(ready(map.get(round-r.k))&&r.test(map.get(round-r.k))));
+ if(filter==='match')visible=visible.filter(r=>{const src=map.get(round-r.k);return ready(src)&&r.test(src)});
+ for(const r of visible){const src=map.get(round-r.k),active=ready(src)&&r.test(src),s=r.performance;
+  if(active&&r.id!=='P03'){if(r.side==='P')countP++;else countB++}
+  const card=document.createElement('div');card.className='rule side-'+r.side.toLowerCase()+(active?' active':'');card.title=r.note+` · N+${r.k} · Chỉ dùng kết quả trước ván ${round}`;
+  const top=document.createElement('div');top.className='ruleTop';const code=document.createElement('span');code.className='ruleCode '+r.side.toLowerCase();code.textContent=r.id+' → '+r.side;const offset=document.createElement('span');offset.className='offset';offset.textContent='N+'+r.k;top.append(code,offset);
+  if(active){const m=document.createElement('span');m.className='match-pill';m.textContent='● KHỚP';top.append(m)}
+  const name=document.createElement('div');name.className='ruleName';name.textContent=r.name;
+  const foot=document.createElement('div');foot.className='ruleFoot';const num=document.createElement('span');num.textContent=`${s.D}Đ / ${s.S}S / ${s.H}H · `;
+  const pct=document.createElement('span');const rate=percentTag(s.D,s.S);pct.className='pct '+rate.tone;pct.textContent=rate.txt;num.append(pct);
+  const dots=document.createElement('span');dots.className='dots';for(const st of s.seq.slice(-5)){const d=document.createElement('span');d.className='dot '+st;d.textContent=st==='D'?'Đ':st==='S'?'S':'H';dots.append(d)}
+  if(s.qualifies){let label=document.createElement('span');label.className='ruleStatusMini';label.textContent='● nổi bật';num.append(label)}
+  foot.append(num,dots);card.append(top,name,foot);content.append(card);
+ }
+ if(!content.childNodes.length){const empty=document.createElement('div');empty.className='tip';empty.textContent='Chưa có mẫu khớp. Bấm “Tất cả” để xem toàn bộ rule.';content.append(empty)}
+ $('pRuleCount').textContent=countP;$('bRuleCount').textContent=countB;
+}
+function renderLeaders(map,pick){
+ const list=$('leaderRows');list.replaceChildren();const leaders=pick.rank.filter(x=>x.performance.n>=2).slice(0,4);
+ if(!leaders.length){list.textContent='Chưa có rule nào được chấm tối thiểu 2 lần trên bàn này.';}
+ for(const r of leaders){const s=r.performance,card=document.createElement('div');card.className='leaderRow '+r.side.toLowerCase()+(pick.all.some(x=>x.id===r.id)?' active':'');
+   const top=document.createElement('div');top.className='leaderTop';const label=document.createElement('b');label.textContent=`${r.id} → ${r.side} · N+${r.k}`;
+   const percentage=document.createElement('span');percentage.className='leaderPct'+(!s.qualifies?' warn':'');percentage.textContent=(100*s.rate).toFixed(0)+'%';top.append(label,percentage);
+   const title=document.createElement('div');title.className='leaderRuleName';title.title=r.name;title.textContent=r.name;
+   const bottom=document.createElement('div');bottom.className='leaderPerformance';bottom.textContent=`${s.D}Đ / ${s.S}S / ${s.H}H · ${s.qualifies?'● ĐÃ ĐỦ MẪU':'⚠ ÍT MẪU, CHƯA BỎ PHIẾU'} · `;
+   for(const v of s.seq){const dot=document.createElement('span');dot.className='dot '+v;dot.textContent=v==='D'?'Đ':v==='S'?'S':'H';bottom.append(dot)}
+   card.append(top,title,bottom);list.append(card);
+ }
+ const hot=pick.rank.filter(x=>x.performance.qualifies).length;
+ $('leaderHint').textContent=`${hot} mẫu đạt điều kiện trên bàn này · ${ALL_RULES.length-1} rule P/B cố định + ${TIE_RULES.length} biến thể HÒA tự nhận diện · chế độ ${rankMode==='early'?'sớm':rankMode==='strict'?'chặt':'cân bằng'}. Các rule chưa đủ mẫu vẫn được theo dõi.`;
+ $('leaderFoot').textContent='Thứ hạng tính từ kết quả trước ván '+round+'; không tự học kết quả ván tương lai. Chọn rule top không bảo đảm ván tiếp theo đúng.';
+}
+function renderBenches(){
+ const host=$('benchSummaries');host.replaceChildren();$('benchCount').textContent=`8 bàn tham khảo + ${archivedTables.length} bàn tự lưu` ;
+ for(const table of [...BENCH_TABLES,...archivedTables]){const map=new Map(table.rows.map(r=>[r.round,r]));
+  let ranks=[];
+  for(const rule of ALL_RULES.concat(makeTieCandidates(table.rows))){if(rule.id==='P03')continue;let D=0,S=0,H=0;
+   for(const h of table.rows){const source=map.get(h.round-rule.k);if(!ready(source)||!rule.test(source))continue;const w=winner(h);if(w==='H')H++;else if(w===rule.side)D++;else S++}
+   if(D+S>=3)ranks.push({id:rule.id,side:rule.side,D,S,H,rate:D/(D+S)});
+  }
+  ranks.sort((a,b)=>b.rate-a.rate||b.D-a.D);const div=document.createElement('div');div.className='benchOne';
+  const top=document.createElement('strong');top.textContent=table.name+` · ${table.rows.length} ván`;div.append(top);
+  for(const r of ranks.slice(0,3)){const txt=document.createElement('div');txt.textContent=`${r.id} → ${r.side}: ${r.D}/${r.D+r.S} (${(r.rate*100).toFixed(0)}%)`;div.append(txt)}
+  const small=document.createElement('small');small.textContent='Hồi cứu được chọn sau khi xem toàn bàn; không dùng làm tín hiệu chính.';div.append(small);host.append(div);
+ }
+}
+function renderLibrary(){const list=$('libraryList');list.replaceChildren();const q=$('librarySearch').value.toLocaleLowerCase('vi').trim();const s=$('librarySide').value,mode=$('libraryHigh').value;
+ const arr=LIBRARY.filter(x=>(s==='all'||x.pick===s)&&(mode!=='high'||(x.total.pct>=68&&x.total.good+x.total.bad>=20))&&`${x.id} ${x.title} ${x.category}`.toLocaleLowerCase('vi').includes(q)).sort((a,b)=>b.total.pct-a.total.pct||b.total.good-a.total.good);
+ for(const x of arr){const box=document.createElement('article');box.className='libItem side-'+x.pick.toLowerCase();const row=document.createElement('div');row.className='libRow';const title=document.createElement('b');title.textContent=x.id+' · '+x.title;const pct=document.createElement('span');pct.className='libPct '+(x.total.pct>=68?'':x.total.pct>=55?'mid':'bad');pct.textContent=x.total.pct.toFixed(1)+'%';row.append(title,pct);
+ const sub=document.createElement('small');sub.textContent=`${x.category} · ${x.pick} tại N+${x.lag}`;
+ const foot=document.createElement('div');foot.className='libFoot';const fmt=v=>`${v.good}/${v.good+v.bad}`;
+ foot.textContent=`8 bàn: ${fmt(x.total)} · 6 bàn cũ: ${fmt(x.old)} · 2 bàn mới: ${fmt(x.new)}`;
+ const r=RULE_BY_LIB.get(x.id),m=byRound(),target=round;
+ const live=verifiedFor(r),retroData=scoreBefore(r,m,target);
+ const match=ready(m.get(target-r.k))&&r.test(m.get(target-r.k));
+ const liveLine=document.createElement('div');liveLine.className='libLive';
+ const label=retroData.qualifies?'ĐỦ ĐIỀU KIỆN PHONG ĐỘ':'CHƯA ĐỦ PHONG ĐỘ';
+ liveLine.textContent=`${match?'● ĐANG KHỚP · ':''}${label} · Trên bàn: ${retroData.D}Đ/${retroData.S}S/${retroData.H}H (hồi cứu trước ván) · Tiến cứu ghi trước ván: ${live.D}Đ/${live.S}S/${live.H}H`;
+ box.append(row,sub,foot,liveLine);list.append(box)}$('libraryCount').textContent=`${arr.length} / ${LIBRARY.length} mẫu · đang quét`;}
+
+
+// Phân tầng Hòa hồi cứu trên 8 bàn cố định. Không tạo thêm phiếu dự đoán.
+const TIE_AUDIT_8_TABLES={"1":{"all":{"P":29,"B":11,"H":3},"point":{"0":{"P":3,"B":0,"H":0},"1":{"P":1,"B":1,"H":0},"2":{"P":0,"B":0,"H":0},"3":{"P":1,"B":0,"H":1},"4":{"P":1,"B":1,"H":1},"5":{"P":4,"B":1,"H":0},"6":{"P":11,"B":1,"H":1},"7":{"P":2,"B":5,"H":0},"8":{"P":5,"B":0,"H":0},"9":{"P":1,"B":2,"H":0}},"cards":{"2-2":{"P":17,"B":6,"H":0},"2-3":{"P":0,"B":1,"H":0},"3-2":{"P":3,"B":2,"H":1},"3-3":{"P":9,"B":2,"H":2}},"intersection":{"0|2-2":{"P":0,"B":0,"H":0},"1|2-2":{"P":0,"B":0,"H":0},"2|2-2":{"P":0,"B":0,"H":0},"3|2-2":{"P":0,"B":0,"H":0},"4|2-2":{"P":0,"B":0,"H":0},"5|2-2":{"P":0,"B":0,"H":0},"6|2-2":{"P":9,"B":1,"H":0},"7|2-2":{"P":2,"B":3,"H":0},"8|2-2":{"P":5,"B":0,"H":0},"9|2-2":{"P":1,"B":2,"H":0},"0|2-3":{"P":0,"B":0,"H":0},"1|2-3":{"P":0,"B":0,"H":0},"2|2-3":{"P":0,"B":0,"H":0},"3|2-3":{"P":0,"B":0,"H":0},"4|2-3":{"P":0,"B":0,"H":0},"5|2-3":{"P":0,"B":0,"H":0},"6|2-3":{"P":0,"B":0,"H":0},"7|2-3":{"P":0,"B":1,"H":0},"8|2-3":{"P":0,"B":0,"H":0},"9|2-3":{"P":0,"B":0,"H":0},"0|3-2":{"P":0,"B":0,"H":0},"1|3-2":{"P":0,"B":0,"H":0},"2|3-2":{"P":0,"B":0,"H":0},"3|3-2":{"P":0,"B":0,"H":0},"4|3-2":{"P":1,"B":0,"H":1},"5|3-2":{"P":2,"B":1,"H":0},"6|3-2":{"P":0,"B":0,"H":0},"7|3-2":{"P":0,"B":1,"H":0},"8|3-2":{"P":0,"B":0,"H":0},"9|3-2":{"P":0,"B":0,"H":0},"0|3-3":{"P":3,"B":0,"H":0},"1|3-3":{"P":1,"B":1,"H":0},"2|3-3":{"P":0,"B":0,"H":0},"3|3-3":{"P":1,"B":0,"H":1},"4|3-3":{"P":0,"B":1,"H":0},"5|3-3":{"P":2,"B":0,"H":0},"6|3-3":{"P":2,"B":0,"H":1},"7|3-3":{"P":0,"B":0,"H":0},"8|3-3":{"P":0,"B":0,"H":0},"9|3-3":{"P":0,"B":0,"H":0}},"zero":{"0":{"P":6,"B":4,"H":1},"1":{"P":13,"B":5,"H":0},"2":{"P":6,"B":1,"H":0},"3":{"P":2,"B":1,"H":2},"4":{"P":2,"B":0,"H":0},"5":{"P":0,"B":0,"H":0},"6":{"P":0,"B":0,"H":0}},"pairs":{}},"2":{"all":{"P":16,"B":23,"H":4},"point":{"0":{"P":1,"B":1,"H":1},"1":{"P":0,"B":1,"H":1},"2":{"P":0,"B":0,"H":0},"3":{"P":1,"B":1,"H":0},"4":{"P":0,"B":2,"H":1},"5":{"P":1,"B":4,"H":0},"6":{"P":6,"B":7,"H":0},"7":{"P":3,"B":3,"H":1},"8":{"P":2,"B":3,"H":0},"9":{"P":2,"B":1,"H":0}},"cards":{"2-2":{"P":11,"B":12,"H":0},"2-3":{"P":1,"B":0,"H":0},"3-2":{"P":1,"B":3,"H":2},"3-3":{"P":3,"B":8,"H":2}},"intersection":{"0|2-2":{"P":0,"B":0,"H":0},"1|2-2":{"P":0,"B":0,"H":0},"2|2-2":{"P":0,"B":0,"H":0},"3|2-2":{"P":0,"B":0,"H":0},"4|2-2":{"P":0,"B":0,"H":0},"5|2-2":{"P":0,"B":0,"H":0},"6|2-2":{"P":5,"B":5,"H":0},"7|2-2":{"P":2,"B":3,"H":0},"8|2-2":{"P":2,"B":3,"H":0},"9|2-2":{"P":2,"B":1,"H":0},"0|2-3":{"P":0,"B":0,"H":0},"1|2-3":{"P":0,"B":0,"H":0},"2|2-3":{"P":0,"B":0,"H":0},"3|2-3":{"P":0,"B":0,"H":0},"4|2-3":{"P":0,"B":0,"H":0},"5|2-3":{"P":0,"B":0,"H":0},"6|2-3":{"P":0,"B":0,"H":0},"7|2-3":{"P":1,"B":0,"H":0},"8|2-3":{"P":0,"B":0,"H":0},"9|2-3":{"P":0,"B":0,"H":0},"0|3-2":{"P":0,"B":0,"H":0},"1|3-2":{"P":0,"B":0,"H":0},"2|3-2":{"P":0,"B":0,"H":0},"3|3-2":{"P":0,"B":0,"H":0},"4|3-2":{"P":0,"B":1,"H":1},"5|3-2":{"P":1,"B":2,"H":0},"6|3-2":{"P":0,"B":0,"H":0},"7|3-2":{"P":0,"B":0,"H":1},"8|3-2":{"P":0,"B":0,"H":0},"9|3-2":{"P":0,"B":0,"H":0},"0|3-3":{"P":1,"B":1,"H":1},"1|3-3":{"P":0,"B":1,"H":1},"2|3-3":{"P":0,"B":0,"H":0},"3|3-3":{"P":1,"B":1,"H":0},"4|3-3":{"P":0,"B":1,"H":0},"5|3-3":{"P":0,"B":2,"H":0},"6|3-3":{"P":1,"B":2,"H":0},"7|3-3":{"P":0,"B":0,"H":0},"8|3-3":{"P":0,"B":0,"H":0},"9|3-3":{"P":0,"B":0,"H":0}},"zero":{"0":{"P":4,"B":6,"H":1},"1":{"P":8,"B":8,"H":2},"2":{"P":1,"B":6,"H":0},"3":{"P":2,"B":3,"H":0},"4":{"P":1,"B":0,"H":1},"5":{"P":0,"B":0,"H":0},"6":{"P":0,"B":0,"H":0}},"pairs":{}},"3":{"all":{"P":16,"B":21,"H":5},"point":{"0":{"P":0,"B":3,"H":0},"1":{"P":1,"B":0,"H":1},"2":{"P":0,"B":0,"H":0},"3":{"P":1,"B":1,"H":0},"4":{"P":2,"B":1,"H":0},"5":{"P":3,"B":2,"H":0},"6":{"P":6,"B":6,"H":1},"7":{"P":1,"B":4,"H":2},"8":{"P":0,"B":4,"H":1},"9":{"P":2,"B":0,"H":0}},"cards":{"2-2":{"P":8,"B":10,"H":4},"2-3":{"P":0,"B":1,"H":0},"3-2":{"P":4,"B":2,"H":0},"3-3":{"P":4,"B":8,"H":1}},"intersection":{"0|2-2":{"P":0,"B":0,"H":0},"1|2-2":{"P":0,"B":0,"H":0},"2|2-2":{"P":0,"B":0,"H":0},"3|2-2":{"P":0,"B":0,"H":0},"4|2-2":{"P":0,"B":0,"H":0},"5|2-2":{"P":0,"B":0,"H":0},"6|2-2":{"P":5,"B":4,"H":1},"7|2-2":{"P":1,"B":2,"H":2},"8|2-2":{"P":0,"B":4,"H":1},"9|2-2":{"P":2,"B":0,"H":0},"0|2-3":{"P":0,"B":0,"H":0},"1|2-3":{"P":0,"B":0,"H":0},"2|2-3":{"P":0,"B":0,"H":0},"3|2-3":{"P":0,"B":0,"H":0},"4|2-3":{"P":0,"B":0,"H":0},"5|2-3":{"P":0,"B":0,"H":0},"6|2-3":{"P":0,"B":0,"H":0},"7|2-3":{"P":0,"B":1,"H":0},"8|2-3":{"P":0,"B":0,"H":0},"9|2-3":{"P":0,"B":0,"H":0},"0|3-2":{"P":0,"B":0,"H":0},"1|3-2":{"P":0,"B":0,"H":0},"2|3-2":{"P":0,"B":0,"H":0},"3|3-2":{"P":0,"B":0,"H":0},"4|3-2":{"P":1,"B":1,"H":0},"5|3-2":{"P":3,"B":0,"H":0},"6|3-2":{"P":0,"B":0,"H":0},"7|3-2":{"P":0,"B":1,"H":0},"8|3-2":{"P":0,"B":0,"H":0},"9|3-2":{"P":0,"B":0,"H":0},"0|3-3":{"P":0,"B":3,"H":0},"1|3-3":{"P":1,"B":0,"H":1},"2|3-3":{"P":0,"B":0,"H":0},"3|3-3":{"P":1,"B":1,"H":0},"4|3-3":{"P":1,"B":0,"H":0},"5|3-3":{"P":0,"B":2,"H":0},"6|3-3":{"P":1,"B":2,"H":0},"7|3-3":{"P":0,"B":0,"H":0},"8|3-3":{"P":0,"B":0,"H":0},"9|3-3":{"P":0,"B":0,"H":0}},"zero":{"0":{"P":3,"B":6,"H":2},"1":{"P":8,"B":8,"H":2},"2":{"P":3,"B":3,"H":0},"3":{"P":2,"B":2,"H":1},"4":{"P":0,"B":2,"H":0},"5":{"P":0,"B":0,"H":0},"6":{"P":0,"B":0,"H":0}},"pairs":{}}};
+function renderTieQuick(map,target,vote){
+ const box=$('tieQuickContent');box.replaceChildren();
+ const samples=[];
+ for(let lag=1;lag<=3;lag++){
+  const src=map.get(target-lag);if(!ready(src)||winner(src)!=='H')continue;
+  const current=vote.rank.filter(r=>r.tieKind&&r.k===lag&&r.test(src))
+   .sort((a,b)=>Number(b.performance.qualifies)-Number(a.performance.qualifies)||b.performance.weighted-a.performance.weighted||b.performance.n-a.performance.n);
+  const qualified=current.filter(r=>r.performance.qualifies);
+  // prefer the precise point+card match when it actually has enough evidence;
+  // otherwise show the best broad (point-only or card-only) observation.
+  const chosen=qualified.find(r=>r.tieKind==='combined')||qualified[0]||current[0];
+  samples.push({lag,src,chosen,eligible:qualified.length});
+ }
+ if(!samples.length){box.textContent='Chưa có HÒA trong ba ván nguồn gần nhất · các nhóm HÒA vẫn được theo dõi ngầm.';return;}
+ for(const a of samples){
+  const div=document.createElement('div');div.className='tieQuickRow';
+  const p=pts(a.src.p),shape=`${a.src.p.length}-${a.src.b.length}`;
+  const title=document.createElement('b');title.textContent=`Ván ${target-a.lag}: HÒA ${p}–${p} · ${shape} lá → N+${a.lag}`;div.append(title);
+  const sub=document.createElement('span');sub.className='q';
+  const r=a.chosen;
+  if(!r||!a.eligible){sub.textContent='Chưa đủ bằng chứng trên bàn hiện tại: chỉ ghi nhận HÒA, chưa đưa phiếu.';}
+  else{
+   const sc=r.performance;
+   sub.textContent=`Nhóm ${r.tieKind==='combined'?'điểm + số lá':r.tieKind==='point'?'điểm':'số lá'} · ${r.side} · ${sc.D} Đ / ${sc.S} S / ${sc.H} H (${Math.round(100*sc.rate)}% hồi cứu trên bàn). Gộp 1 phiếu cho mỗi ván nguồn.`;
+   const side=document.createElement('span');side.className=r.side.toLowerCase();side.textContent=' · hướng '+r.side;div.append(side);
+  }
+  div.append(sub);box.append(div);
+ }
+}
+function renderTieReview(map,target){
+ const host=$('tieReview');host.replaceChildren();let found=false;
+ const addStat=(parent,label,c)=>{const n=c.P+c.B+c.H;
+   const e=document.createElement('span');e.textContent=`${label}: ${n} mẫu · P ${c.P} / B ${c.B} / H ${c.H}`;parent.append(e)};
+ for(let lag=1;lag<=3;lag++){
+  const source=map.get(target-lag);if(!ready(source)||winner(source)!=='H')continue;
+  found=true;const point=pts(source.p),card=`${source.p.length}-${source.b.length}`;
+  const ref=TIE_AUDIT_8_TABLES[lag],all=ref.all,pa=ref.point[String(point)],ca=ref.cards[card],detail=ref.intersection[`${point}|${card}`];
+  const div=document.createElement('div');div.className='tieLine';
+  const title=document.createElement('strong');title.textContent=`Nguồn ván ${target-lag}: HÒA ${point}–${point} · ${card} lá → xét ván ${target} (N+${lag})`;
+  const line=document.createElement('div');line.className='tieMini';
+  addStat(line,'8 bàn · Hòa chung',all);addStat(line,`8 bàn · Hòa ${point} điểm`,pa);addStat(line,`8 bàn · ${card} lá`,ca);addStat(line,`8 bàn · ${point} điểm & ${card} lá`,detail);
+  const local={P:0,B:0,H:0};for(const [start,h] of map){if(!ready(h)||winner(h)!=='H'||pts(h.p)!==point||`${h.p.length}-${h.b.length}`!==card)continue;const nxt=map.get(start+lag);if(!ready(nxt))continue;local[winner(nxt)]++}
+  addStat(line,'Bàn đang ghi · hồi cứu đúng điểm & số lá',local);
+  div.append(title,line);host.append(div);
+ }
+ if(!found){host.textContent='Ba ván gần nhất chưa có nguồn HÒA để đối chiếu. Mẫu HÒA được tính riêng theo điểm, số lá và N+1/N+2/N+3.';}
+}
+
+
+// Bảng ứng viên: không dùng tỷ lệ lịch sử đã chọn mẫu để cấp phiếu.
+const NEW_HISTORICAL = {"M01": {"recent": "15/18 lượt P/B"}, "M02": {"recent": "15/21 lượt P/B"}, "M03": {"recent": "11/13 lượt P/B"}, "M04": {"recent": "15/20 lượt P/B"}, "M05": {"recent": "12/16 lượt P/B"}, "M06": {"recent": "15/17 lượt P/B"}, "M07": {"recent": "14/18 lượt P/B"}, "M08": {"recent": "15/18 lượt P/B"}, "M09": {"recent": "25/35 lượt P/B"}, "M10": {"recent": "16/24 lượt P/B"}};
+function renderNewRules(map, vote){
+ const host=$('newRulesPanel');if(!host)return;
+ const rows=NEW_RULES.map(r=>{
+  const src=map.get(round-r.k);
+  const match=ready(src)&&r.test(src);
+  const s=scoreBefore(r,map,round);
+  const checked=verifiedFor(r,round);
+  const qualified=s.qualifies&&checked.streak>=3;
+  return {r,match,s,checked,qualified,src:match?round-r.k:null};
+ }).sort((a,b)=>Number(b.match)-Number(a.match)||Number(b.qualified)-Number(a.qualified)||b.s.n-a.s.n||a.r.id.localeCompare(b.r.id));
+ const hits=rows.filter(x=>x.match);
+ $('newMatchBadge').textContent=`${hits.length} khớp · ${hits.filter(x=>x.qualified).length} đủ điều kiện`;
+ host.replaceChildren();
+ for(const x of rows){
+  const {r,s,match,checked,qualified}=x;
+  const div=document.createElement('div');div.className='newRuleRow '+r.side.toLowerCase()+(match?' match':'')+(qualified?' eligible':'');
+  const name=document.createElement('b');name.textContent=`${r.id} → ${r.side} · N+${r.k} · ${r.name}`;
+  const cond=document.createElement('small');cond.textContent=r.note;
+  const stats=document.createElement('small');const hist=NEW_HISTORICAL[r.id];
+  stats.textContent=`Trên bàn: ${s.D} Đ / ${s.S} S / ${s.H} H · ${(s.D+s.S)?(100*s.rate).toFixed(0)+'%':'chưa có mẫu'} · kiểm chứng mới: ${checked.D}Đ/${checked.S}S/${checked.H}H`;
+  const stat=document.createElement('small');stat.className='candidateWarn';
+  stat.textContent=(match?`● KHỚP từ ván ${x.src} · `:'Không khớp ván này · ')+(qualified?'ĐÃ ĐỦ ĐIỀU KIỆN PHIẾU':`đang theo dõi (${checked.streak}/3 ĐÚNG liên tiếp)`)+` · 3 bàn 30/10 (hồi cứu): ${hist.recent}`;
+  div.append(name,cond,stats,stat);host.append(div);
+ }
+}
+
+
+// V31/10: vị trí trong DỮ LIỆU được ghi, không suy đoán thời điểm hết shoe.
+function stageIndexFor(target){let count=0;for(const h of data.records)if(h.round<target&&ready(h))count++;return count+1;}
+function stageKeyFor(target){const pos=stageIndexFor(target);return pos<=20?'early':pos<=40?'middle':'late';}
+const STAGE_SPECS=[{key:'early',title:'Đầu phần ghi · 1–20'},{key:'middle',title:'Giữa phần ghi · 21–40'},{key:'late',title:'Sau ván ghi thứ 40'}];
+// Chỉ tín hiệu đã khóa và chốt từ trước; không hồi cứu để nâng hạng.
+function stageRuleVerified(rule,stage,before=Infinity){
+ let D=0,S=0,H=0;const marks=[];const map=byRound();
+ const rounds=Object.keys(data.locked).map(Number).filter(n=>n<before).sort((a,b)=>a-b);
+ for(const n of rounds){const snap=data.locked[n],h=map.get(n);if(!ready(h)||stageKeyFor(n)!==stage||!Array.isArray(snap.ruleMarks))continue;
+  if(!snap.ruleMarks.some(m=>m.id===rule.id&&m.side===rule.side&&m.sourceRound===n-rule.k))continue;
+  const outcome=winner(h),v=outcome==='H'?'H':outcome===rule.side?'D':'S';marks.push(v);if(v==='D')D++;else if(v==='S')S++;else H++;
+ }
+ const n=D+S,rate=n?D/n:0;
+ return {D,S,H,n,rate,featured:n>=10&&rate>=.65,last:marks.slice(-8)};
+}
+function studyRuleBacktest(rule,map,stage,before=Infinity){
+ let D=0,S=0,H=0;
+ for(const h of data.records){if(h.round>=before||stageKeyFor(h.round)!==stage||!ready(h))continue;
+  const src=map.get(h.round-rule.k);if(!ready(src)||!rule.test(src))continue;
+  const w=winner(h);if(w==='H')H++;else if(w===rule.side)D++;else S++;
+ }
+ return {D,S,H};
+}
+function auditStageSignals(stage){
+ const map=byRound();let D=0,S=0,H=0,P=0,B=0;const cases=[];
+ for(const n of Object.keys(data.locked).map(Number).sort((a,b)=>a-b)){
+  const f=data.locked[n],h=map.get(n);if(!ready(h)||!['P','B'].includes(f.pick)||stageKeyFor(n)!==stage)continue;
+  const w=winner(h),v=w==='H'?'H':w===f.pick?'D':'S';cases.push({n,v,pick:f.pick});
+  if(v==='D')D++;else if(v==='S')S++;else H++;if(f.pick==='P')P++;else B++;
+ }
+ return {D,S,H,P,B,cases,n:D+S,rate:(D+S)?D/(D+S):0};
+}
+function renderStageAudit(map){
+ const now=stageKeyFor(round),name=STAGE_SPECS.find(s=>s.key===now).title;
+ const all=Object.keys(data.locked).map(Number).filter(n=>n<round).sort((a,b)=>a-b)
+   .flatMap(n=>{const f=data.locked[n],h=map.get(n);if(!ready(h)||!['P','B'].includes(f.pick))return [];return [{round:n,pick:f.pick,st:winner(h)==='H'?'H':winner(h)===f.pick?'D':'S'}]});
+ const scored=all.filter(x=>x.st!=='H'),last=scored.slice(-10),good=last.filter(x=>x.st==='D').length;
+ const skew=all.slice(-10),p=skew.filter(x=>x.pick==='P').length,b=skew.filter(x=>x.pick==='B').length;
+ const rate=last.length?Math.round(good*100/last.length):null;
+ $('stageNow').textContent=`Ván đang xét: ${round} · ${name} · 10 tín hiệu P/B gần nhất: ${last.length?good+'Đ / '+(last.length-good)+'S ('+rate+'%)':'chưa có kiểm chứng'} · phiếu gần đây P ${p} / B ${b}`;
+ const issues=[];
+ if(last.length>=8&&rate<45)issues.push(`Tín hiệu gần đây giảm: ${good}/${last.length} đúng (${rate}%).`);
+ if(skew.length>=8&&Math.max(p,b)/skew.length>=.75)issues.push(`Thiên lệch ${p>b?'P':'B'}: ${Math.max(p,b)}/${skew.length} tín hiệu gần nhất.`);
+ const warn=$('stageWarning');warn.hidden=!issues.length;warn.textContent=issues.length?'⚠ KIỂM TOÁN: '+issues.join(' ')+' Đây là thống kê theo dõi, không phải lệnh đảo hướng hay đặt tiền.':'';
+ const host=$('stageGrid');host.replaceChildren();
+ const candidates=ALL_RULES.filter(r=>r.id!=='P03');
+ for(const stage of STAGE_SPECS){
+  const a=auditStageSignals(stage.key),box=document.createElement('div');box.className='stageCell'+(stage.key===now?' isNow':'');
+  const top=document.createElement('strong');top.textContent=stage.title;box.append(top);
+  const met=document.createElement('div');met.className='stageMetric';met.textContent=`Tín hiệu: ${a.D}Đ / ${a.S}S / ${a.H}H`;box.append(met);
+  const sub=document.createElement('small');sub.textContent=a.n?`Đúng ${(100*a.rate).toFixed(1)}% trên ${a.n} tín hiệu P/B đã lưu · phiếu P ${a.P}, B ${a.B}`:'Chưa có tín hiệu đã khóa trong giai đoạn này';box.append(sub);
+  const ranked=candidates.map(r=>({r,v:stageRuleVerified(r,stage.key,round)})).filter(x=>x.v.n>=3)
+    .sort((a,b)=>Number(b.v.featured)-Number(a.v.featured)||b.v.rate-a.v.rate||b.v.n-a.v.n).slice(0,5);
+  const ul=document.createElement('ul');ul.className='stageTop';
+  if(!ranked.length){const li=document.createElement('li');li.textContent='Top rule: chưa đủ 3 lượt kiểm chứng.';ul.append(li)}
+  for(const x of ranked){const li=document.createElement('li');
+   const name=document.createElement('b');name.textContent=`${x.r.id} → ${x.r.side}`;
+   const label=document.createTextNode(` · ${x.v.D}Đ/${x.v.S}S/${x.v.H}H · ${(100*x.v.rate).toFixed(0)}%`);
+   const badge=document.createElement('span');badge.className='stageTag'+(x.v.featured?'':' watch');badge.textContent=x.v.featured?'NỔI BẬT':'Theo dõi';
+   li.append(name,label,badge);ul.append(li);
+  }
+  box.append(ul);host.append(box);
+ }
+}
+function renderStudyRules(map){
+ const host=$('studyRows');host.replaceChildren();let matched=0,featured=0;
+ const currentStage=stageKeyFor(round);
+ for(const r of STUDY_RULES){
+  const src=map.get(round-r.k),match=ready(src)&&r.test(src);if(match)matched++;
+  const retro=studyRuleBacktest(r,map,currentStage,round),verified=stageRuleVerified(r,currentStage,round);
+  const leader=verified.featured;if(leader)featured++;
+  const item=document.createElement('article');item.className='studyRow'+(match?' match':'')+(leader?' featured':'');
+  const title=document.createElement('b');title.textContent=`${r.id} → ${r.side} · N+${r.k} · ${r.name}`;
+  const detail=document.createElement('small');detail.textContent=r.note;
+  const badge=document.createElement('div');badge.className='studyBadge'+(leader?'':' wait');badge.textContent=leader?'★ RULE NỔI BẬT · kiểm chứng theo giai đoạn':match?`● KHỚP từ ván ${round-r.k} · đang kiểm chứng`:'ĐANG THEO DÕI · chưa khớp ván này';
+  const s=document.createElement('div');s.className='studyStat';s.textContent=`Giai đoạn hiện tại: ${verified.D}Đ / ${verified.S}S / ${verified.H}H đã khóa ${verified.n?'· '+(100*verified.rate).toFixed(1)+'%':''}`;
+  const small=document.createElement('small');small.textContent=`Hồi cứu giai đoạn (không nâng hạng): ${retro.D}Đ / ${retro.S}S / ${retro.H}H. ${r.id==='T03'?'Nhánh F04 · không có phiếu riêng.':'Mẫu mới không bỏ phiếu chính.'}`;
+  item.append(title,detail,badge,s,small);host.append(item);
+ }
+ $('studyMatchBadge').textContent=`${matched} khớp · ${featured} nổi bật`;
+}
+
+function render(){rebuildTieCandidates();const map=byRound(),re=retro(map),live=actualProspective(),vote=votesFor(round,map);$('roundNo').value=String(round);$('nextRound').textContent=round;const editing=map.has(round);$('editingLabel').textContent=editing?'ĐANG SỬA VÁN '+round:`Ván mới · ${map.size} ván đã lưu`;
+ for(const side of ['p','b']){formatDetail(side);for(const b of $(side+'Keys').querySelectorAll('button'))b.disabled=draft[side].length>=3}
+ const ok=ready(draft);$('saveRound').disabled=!ok;$('saveRound').textContent=editing?'✓ LƯU SỬA VÁN':'✓ CHỐT VÁN → TIẾP';$('roundWinner').textContent=ok?'Kết quả thực tế: '+winner(draft):'Cần 2–3 lá mỗi bên';
+ const validPick=vote.pick!=='CHỜ';$('bigPick').textContent=vote.pick;$('bigPick').className='pick '+(vote.pick==='P'?'p':vote.pick==='B'?'b':'wait');document.querySelector('.pickBox').className='pickBox state-'+(vote.pick==='P'?'p':vote.pick==='B'?'b':'wait');$('voteP').textContent=vote.P;$('voteB').textContent=vote.B;
+ $('pickType').textContent=validPick?(vote.P+vote.B>=2?'NHIỀU NGUỒN · ĐANG THỬ':'1 NGUỒN · ĐANG THỬ'):(vote.conflicts.length?'XUNG ĐỘT':'CHƯA ĐỦ PHONG ĐỘ');
+ $('voteExplain').textContent=validPick?`${vote.P+vote.B} nguồn hợp lệ · ${vote.valid.map(v=>'ván '+v.source+' → '+v.side+' ('+v.leader+')').join(' | ')}. Xếp theo kết quả trước ván, chỉ để kiểm chứng.`:vote.P===vote.B&&vote.P>0?'Phiếu P/B chưa phân định rõ → CHỜ.':vote.conflicts.length?'Rule chung ván nguồn dự báo ngược nhau và phong độ chưa phân định → CHỜ.':'Rule chưa khớp hoặc chưa đủ kết quả trên bàn hiện tại → CHỜ.';
+ $('totalHands').textContent=data.records.length;const counts={P:0,B:0,H:0};for(const h of data.records)counts[winner(h)]++;$('realPBH').textContent=`${counts.P} P · ${counts.B} B · ${counts.H} H`;$('matchedCount').textContent=re.picks;
+ $('liveScore').textContent=`${live.D} / ${live.S} / ${live.H}`;$('liveRate').textContent=live.D+live.S?`Đúng ${(100*live.D/(live.D+live.S)).toFixed(1)}% · ghi trước ván`:`Chưa có dự đoán mới được chấm`;
+ $('backScore').textContent=`${re.D} / ${re.S} / ${re.H}`;$('backRate').textContent=re.D+re.S?`Đúng ${(100*re.D/(re.D+re.S)).toFixed(1)}% · hồi cứu`:'Chưa có mẫu hồi cứu';
+ for(const [prefix,stat] of [['live',live],['back',re]]){for(const c of ['D','S','H'])$(prefix+c).textContent=stat[c];const rate=percentTag(stat.D,stat.S);const el=$(prefix+'Pct');el.textContent=rate.txt==='—'?'CHƯA CÓ MẪU':rate.txt+' ĐÚNG';el.className='rateMark '+(rate.tone==='empty'?'':rate.tone)}
+ renderHistory(re,map);renderLeaders(map,vote);renderStageAudit(map);renderStudyRules(map);renderTieQuick(map,round,vote);renderShadow(map,vote);renderNewRules(map,vote);renderTieReview(map,round);renderRules(map,vote);
+}
+const archivesKey=storeKey+'_saved_tables_v1';
+function tableSignature(rows){return rows.map(h=>h.round+':'+h.p.join('.')+'/'+h.b.join('.')).join('|')}
+function saveArchive(silent=false){
+ if(data.records.length<2){if(!silent)toast('Cần ít nhất 2 ván để lưu bàn.');return false}
+ const rows=data.records.map(h=>({round:h.round,p:h.p.slice(),b:h.b.slice()}));
+ const id=tableSignature(rows);
+ if(archivedTables.some(t=>t.sig===id)){if(!silent)toast('Bàn này đã có trong kho.');return false}
+ const dt=new Date();
+ archivedTables.push({name:`Bàn tự lưu ${dt.toLocaleDateString('vi-VN')} · ${rows.length} ván`,sig:id,rows});
+ try{localStorage.setItem(archivesKey,JSON.stringify(archivedTables))}catch(e){}
+ renderBenches();if(!silent)toast(`Đã lưu bàn ${rows.length} ván vào kho so sánh.`);return true;
+}
+function restoreArchives(){try{const a=JSON.parse(localStorage.getItem(archivesKey)||'[]');if(Array.isArray(a))archivedTables=a.filter(v=>Array.isArray(v.rows)&&v.rows.every(ready)).slice(-80)}catch(e){}}
+function clearFutureLocked(n){for(const k of Object.keys(data.locked)){if(Number(k)>=n)delete data.locked[k]}data.liveFrom=maxRound()+1}
+function save(){if(!ready(draft))return toast('Mỗi bên cần ít nhất hai lá.');let existing=data.records.some(h=>h.round===round);if(existing&&!confirm(`Ghi đè lá bài ván ${round}? Các dự đoán tiến cứu từ ván sửa trở đi sẽ được đánh dấu lại để kiểm chứng mới.`))return;
+ const map=byRound(),v=votesFor(round,map);if(!existing&&round>=data.liveFrom){data.locked[round]={pick:v.pick,P:v.P,B:v.B,ruleIDs:v.hits.map(x=>x.id),ruleMarks:v.all,savedAt:new Date().toISOString()}}
+ const h={round,p:draft.p.slice(),b:draft.b.slice()};data.records=data.records.filter(h=>h.round!==round).concat([h]).sort((a,b)=>a.round-b.round);if(existing){clearFutureLocked(round)}
+ const w=winner(h),oldRound=round;round=maxRound()+1;cleanDraft();store();render();toast(`Đã lưu ván ${oldRound} · ${w==='H'?'HÒA':w==='P'?'P thắng':'B thắng'}. ${existing?'Phần tiến cứu từ ván đã sửa được đặt lại.':'Đã chuyển sang ván mới.'}`)}
+function insertGap(){const value=prompt('Chèn một ván bị bỏ sót vào vị trí số mấy? Các ván từ vị trí này trở đi sẽ tăng 1.',''+Math.max(1,round));if(value===null)return;const k=Number(value);if(!Number.isInteger(k)||k<1||k>99999)return toast('Số ván không hợp lệ.');if(!confirm(`Chèn một ván tại vị trí ${k}? Những ván từ ${k} sẽ tăng số lên 1.`))return;for(const h of data.records){if(h.round>=k)h.round++}data.records.sort((a,b)=>a.round-b.round);data.locked={};data.liveFrom=maxRound()+1;round=k;cleanDraft();store();render();toast('Đã chèn ván '+k+'. Nhập lá vào ô trống rồi Chốt.');}
+function undoLast(){if(!data.records.length)return toast('Không có ván nào để xóa.');const h=data.records[data.records.length-1];if(!confirm(`Xóa ván ${h.round} đã lưu?`))return;data.records.pop();delete data.locked[h.round];round=h.round;draft={p:h.p.slice(),b:h.b.slice()};store();render();toast('Đã đưa ván cuối về ô nhập. Bạn có thể chỉnh lại rồi Chốt.');}
+function resetTable(){if(!confirm('Tạo bàn mới? Bàn hiện tại sẽ được lưu vào kho so sánh (nếu có từ 2 ván). Hãy xuất JSON nếu muốn sao lưu cả từng lá.'))return;saveArchive(true);data={records:[],locked:{},liveFrom:1};round=1;cleanDraft();store();render();toast('Đã tạo bàn mới và lưu bàn cũ vào kho.');}
+function exportJSON(){const payload={format:'toan-hoc-one-screen-12-rule',version:3,exportedAt:new Date().toISOString(),records:data.records,locked:data.locked,liveFrom:data.liveFrom,candidateRuleSet:'M01-M10 + T01-T03 / 2026-10-31 / T=observation-only',ruleDefinitions:ALL_RULES.map(({id,side,k,name})=>({id,side,k,name})),tieVariants:TIE_RULES.map(({id,side,k,name})=>({id,side,k,name})),archivedTables:archivedTables.map(v=>({name:v.name,rows:v.rows})),monitoring:{librarySize:LIBRARY.length,tracked:ALL_RULES.length,mode:rankMode,ranking:'per-table prior outcomes before each target round; no future leakage'}};const blob=new Blob([JSON.stringify(payload,null,2)],{type:'application/json;charset=utf-8'});const url=URL.createObjectURL(blob);const a=document.createElement('a');a.href=url;a.download=`Toan_Hoc_22_Mau_1_Man_Hinh_${new Date().toISOString().slice(0,10)}.json`;a.click();setTimeout(()=>URL.revokeObjectURL(url),1500);}
+function parseImport(payload){let rows=[];if(payload&&payload.format==='toan-hoc-one-screen-12-rule'&&Array.isArray(payload.records)){rows=payload.records;}
+ else if(payload&&payload.state&&Array.isArray(payload.state.hands)){const start=Number(payload.state.startRound)||1;rows=payload.state.hands.map((h,i)=>({...h,round:start+i})).filter(x=>ready(x));}
+ else if(payload&&Array.isArray(payload.hands)){const start=Number(payload.startRound)||1;rows=payload.hands.map((h,i)=>({...h,round:start+i})).filter(x=>ready(x));}
+ else throw Error('JSON chưa đúng định dạng Toán Học hoặc Baccarat backup.');
+ const seen=new Set();const list=[];for(const h of rows){const r=Number(h.round);if(!Number.isInteger(r)||r<1||r>99999||!ready(h))continue;if(seen.has(r))throw Error('Trùng số ván '+r);seen.add(r);list.push({round:r,p:h.p.slice(),b:h.b.slice()})}list.sort((a,b)=>a.round-b.round);return list;}
+function doImport(f){if(!f)return;const reader=new FileReader();reader.onload=()=>{try{const payload=JSON.parse(String(reader.result)),arr=parseImport(payload);if(!arr.length)throw Error('Không tìm thấy ván hợp lệ.');if(!confirm(`Nhập ${arr.length} ván từ JSON? Dữ liệu bàn hiện tại sẽ được thay thế.`))return;
+ if(Array.isArray(payload.archivedTables)){
+   for(const a of payload.archivedTables){if(!Array.isArray(a.rows)||!a.rows.length||!a.rows.every(ready))continue;
+     const rows=a.rows.map(h=>({round:Number(h.round),p:h.p.slice(),b:h.b.slice()})).filter(h=>Number.isInteger(h.round)&&h.round>0);
+     if(rows.length&&rows.length===a.rows.length){const sig=tableSignature(rows);if(!archivedTables.some(x=>x.sig===sig))archivedTables.push({name:String(a.name||'Bàn đã nhập'),rows,sig})}}
+   try{localStorage.setItem(archivesKey,JSON.stringify(archivedTables))}catch(e){}
+   renderBenches();
+  }
+ const validRounds=new Set(arr.map(h=>h.round));
+  const sourceLock=(payload.locked&&typeof payload.locked==='object'&&!Array.isArray(payload.locked))?payload.locked:{};
+  const importedLock={};
+  for(const [n,snap] of Object.entries(sourceLock)){
+   if(!validRounds.has(Number(n))||!snap||typeof snap!=='object')continue;
+   const pick=['P','B','CHỜ'].includes(snap.pick)?snap.pick:'CHỜ';
+   importedLock[n]={pick,P:Number(snap.P)||0,B:Number(snap.B)||0,
+    ruleIDs:Array.isArray(snap.ruleIDs)?snap.ruleIDs.filter(x=>typeof x==='string'):[],
+    ruleMarks:Array.isArray(snap.ruleMarks)?snap.ruleMarks.filter(x=>x&&typeof x.id==='string'&&['P','B'].includes(x.side)&&Number.isInteger(x.sourceRound)&&x.sourceRound<Number(n)).map(x=>({id:x.id,side:x.side,sourceRound:x.sourceRound})):[],
+    savedAt:typeof snap.savedAt==='string'?snap.savedAt:''};
+  }
+  data={records:arr,locked:importedLock,liveFrom:Math.max(...arr.map(h=>h.round))+1}; // JSON có ảnh chụp từ trước: giữ nguyên; không tạo dự báo hậu nghiệm.
+ round=data.liveFrom;cleanDraft();store();render();toast(`Đã nhập ${arr.length} ván (${Object.keys(importedLock).length} ảnh chụp tín hiệu cũ). Từ ván ${round} tiếp tục kiểm chứng mới.`)}catch(e){toast('Nhập JSON lỗi: '+e.message)}finally{$('importFile').value=''}};reader.readAsText(f,'UTF-8')}
+function restore(){try{const d=JSON.parse(localStorage.getItem(storeKey)||'null');if(d&&Array.isArray(d.records)){data={records:d.records.filter(ready).filter(h=>Number.isInteger(h.round)).sort((a,b)=>a.round-b.round),locked:d.locked||{},liveFrom:Number(d.liveFrom)||1};round=maxRound()+1}}catch(e){}}
+$('saveRound').onclick=save;$('minusRound').onclick=()=>setRound(Math.max(1,round-1));$('plusRound').onclick=()=>setRound(round+1);$('roundNo').addEventListener('change',e=>setRound(e.target.value));$('undoBtn').onclick=undoLast;$('insertBtn').onclick=insertGap;$('resetDraft').onclick=()=>{cleanDraft();render()};$('exportBtn').onclick=exportJSON;$('importFile').addEventListener('change',e=>doImport(e.target.files[0]));$('clearBtn').onclick=resetTable;for(const side of ['p','b'])$(side+'Delete').onclick=()=>{draft[side].pop();render()};$('filterAll').onclick=()=>{filter='all';$('filterAll').classList.add('active');$('filterMatch').classList.remove('active');render()};$('filterMatch').onclick=()=>{filter='match';$('filterMatch').classList.add('active');$('filterAll').classList.remove('active');render()};$('showAllBtn').onclick=()=>{historyAll=!historyAll;$('showAllBtn').textContent=historyAll?'32 ván':'Tất cả';render()};
+$('libraryBtn').onclick=()=>{renderLibrary();$('libraryDialog').showModal()};$('libraryClose').onclick=()=>$('libraryDialog').close();$('libraryDialog').addEventListener('click',e=>{if(e.target===$('libraryDialog'))$('libraryDialog').close()});for(const id of ['librarySearch','librarySide','libraryHigh'])$(id).addEventListener(id==='librarySearch'?'input':'change',renderLibrary);
+ $('rankSensitivity').addEventListener('change',e=>{rankMode=e.target.value;render()});
+$('archiveBtn').onclick=()=>saveArchive();
+$('clearArchives').onclick=()=>{if(!archivedTables.length)return toast('Kho chưa có bàn tự lưu.');if(!confirm('Xóa toàn bộ bàn đã tự lưu trong kho so sánh? 8 bàn tham khảo vẫn giữ nguyên.'))return;archivedTables=[];try{localStorage.removeItem(archivesKey)}catch(e){}renderBenches();toast('Đã xóa kho tự lưu.')};
+restoreArchives();renderBenches();buildKeys();restore();render();
+})();
+</script>
+
+<script>
+/* Mobile UI only – uses results computed by original algorithm; never recalculates predictions. */
+(function(){
+ 'use strict';
+ const get=id=>document.getElementById(id);
+ const narrow=()=>window.matchMedia('(max-width:760px)').matches;
+ const dock=get('mobileDock');
+ const btns={entry:get('mobileNavEntry'),performance:get('mobileNavPerformance'),rules:get('mobileNavRules')};
+ const left=get('mobileCards');
+ let initializedRuleView=false;
+ function setHand(side){
+   left.dataset.mobileHand=side;
+   get('mobilePickP').classList.toggle('active',side==='p');
+   get('mobilePickB').classList.toggle('active',side==='b');
+   get('mobilePickP').setAttribute('aria-pressed',String(side==='p'));
+   get('mobilePickB').setAttribute('aria-pressed',String(side==='b'));
+ }
+ function showView(view){
+   document.body.dataset.mobileView=view;
+   Object.keys(btns).forEach(k=>{
+     btns[k].classList.toggle('active',k===view);
+     btns[k].setAttribute('aria-selected',String(k===view));
+   });
+   if(narrow()&&view==='rules'&&!initializedRuleView){
+     initializedRuleView=true;
+     get('filterMatch').click(); // Mặc định chỉ xem mẫu khớp; "Tất cả" vẫn có đủ 23 điều kiện.
+   }
+   // Always show newly selected tab from its top, even if a desktop-width view is used.
+   window.scrollTo({top:0,behavior:'instant'});
+ }
+ function updateMatched(){
+   const matches=Array.from(document.querySelectorAll('#rulesList .rule.active'));
+   const body=get('mobileActiveRules');
+   if(!body)return;
+   get('mobileActiveCount').textContent=matches.length+' mẫu';
+   body.replaceChildren();
+   if(!matches.length){const e=document.createElement('div');e.className='noMatch';e.textContent='Chưa có mẫu khớp cho ván này. Tab Kho rule vẫn lưu các mẫu đang học.';body.append(e);return;}
+   for(const m of matches.slice(0,5)){
+      const r=document.createElement('div');r.className='mobileMatchRow '+(m.classList.contains('side-p')?'side-p':'side-b');
+      const text=document.createElement('span');text.className='mobileMatchTitle';
+      const code=m.querySelector('.ruleCode')?.textContent||'';
+      const name=m.querySelector('.ruleName')?.textContent||'';
+      text.textContent=code+' · '+name;
+      const rate=document.createElement('span');rate.className='mobileMatchRate';rate.textContent=m.querySelector('.pct')?.textContent||'—';
+      r.append(text,rate);body.append(r);
+   }
+   if(matches.length>5){const e=document.createElement('div');e.className='noMatch';e.textContent='+'+(matches.length-5)+' mẫu khác — xem tab Kho rule.';body.append(e)}
+ }
+ function sync(){
+   const read=id=>(get(id)?.textContent||'').trim();
+   const pick=read('bigPick');
+   get('mobPick').textContent=pick||'CHỜ';
+   get('mobRound').textContent=read('nextRound')||'—';
+   get('mobVotesP').textContent=read('voteP')||'0';
+   get('mobVotesB').textContent=read('voteB')||'0';
+   const reason=read('voteExplain');
+   const note=get('mobileSignalNote');
+   note.textContent=(pick==='CHỜ'?'CHỜ: ':'Đang kiểm chứng: ')+(reason||'Chưa có dữ liệu trước ván.');
+   note.title=reason||'Chưa có thông tin về rule đang khớp.';
+   get('mobileScoreP').textContent=read('pScore')||'—';
+   get('mobileScoreB').textContent=read('bScore')||'—';
+   dock.classList.toggle('status-p',pick==='P');
+   dock.classList.toggle('status-b',pick==='B');
+   updateMatched();
+ }
+ get('mobilePickP').addEventListener('click',()=>setHand('p'));
+ get('mobilePickB').addEventListener('click',()=>setHand('b'));
+ Object.keys(btns).forEach(k=>btns[k].addEventListener('click',()=>showView(k)));
+ get('mobileDataToggle').addEventListener('click',()=>{
+    const on=document.body.classList.toggle('mobile-tools-open');
+    get('mobileDataToggle').setAttribute('aria-expanded',String(on));
+ });
+ // On mobile, reset selected hand after a successful save, not after an invalid click.
+ get('saveRound').addEventListener('click',()=>{
+   queueMicrotask(()=>{
+     if((get('pCount')?.textContent||'').startsWith('0/')&&(get('bCount')?.textContent||'').startsWith('0/'))setHand('p');
+   });
+ });
+ let scheduled=false;
+ const observer=new MutationObserver(()=>{
+  if(!scheduled){scheduled=true;queueMicrotask(()=>{scheduled=false;sync();});}
+ });
+ for(const id of ['bigPick','nextRound','voteP','voteB','pScore','bScore','rulesList']){
+   const elem=get(id);if(elem)observer.observe(elem,{childList:true,subtree:true,characterData:true});
+ }
+ setHand('p');showView('entry');sync();
+})();
+</script>
+
+<script>
+/* Responsive visual density only. No change to rule calculation, scoring, or storage. */
+(function(){
+  'use strict';
+  const button=document.getElementById('compactModeToggle');
+  if(!button)return;
+  const shortScreen=window.matchMedia('(max-width:760px) and (max-height:620px)');
+  let preference=null;
+  try {const saved=localStorage.getItem('toanhoc:iphone-density');if(saved==='compact'||saved==='comfortable')preference=saved;}catch(e){}
+  function applyDensity(){
+    const enabled=preference===null?shortScreen.matches:preference==='compact';
+    document.body.classList.toggle('half-screen',enabled);
+    button.textContent=enabled?'▣ Đầy đủ':'◧ Gọn';
+    button.setAttribute('aria-pressed',String(enabled));
+    button.title=enabled?'Chuyển giao diện đầy đủ':'Thu gọn để dùng trong nửa màn hình';
+  }
+  button.addEventListener('click',()=>{
+    preference=document.body.classList.contains('half-screen')?'comfortable':'compact';
+    try{localStorage.setItem('toanhoc:iphone-density',preference)}catch(e){}
+    applyDensity();
+  });
+  if(shortScreen.addEventListener)shortScreen.addEventListener('change',applyDensity);
+  else if(shortScreen.addListener)shortScreen.addListener(applyDensity);
+  applyDensity();
+})();
+</script>
+
+</body></html>
